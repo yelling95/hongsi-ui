@@ -1,0 +1,16 @@
+.button_container {
+  &.lg {
+    height: 50px;
+  }
+
+  &.primary {
+    --background: var(--primary-100);
+    --color: var(--white);
+
+    --pressed-background: var(--primary-button-pressed);
+    --pressed-color: var(--white);
+
+    --disabled-backgound: var(--primary-button-disabled);
+    --disabled-color: var(--white);
+  }
+}
