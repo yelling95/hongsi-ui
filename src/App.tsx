@@ -10,7 +10,7 @@ function App() {
 				<Button
 					id='button'
 					size='lg'
-				>Button1</Button>
+				>버튼</Button>
 			</div>
 		</div>
 	)
