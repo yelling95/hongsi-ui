@@ -4,6 +4,7 @@ import App from './App'
 import reportWebVitals from './reportWebVitals'
 
 import './color.scss'
+import './base.scss'
 import './index.scss'
 
 const root = ReactDOM.createRoot(

@@ -1,9 +1,9 @@
 import React, { CSSProperties, SVGProps } from 'react'
-import { AccountFull } from './svg'
+import Svg from './svg'
 import './Icon.scss'
 
 const getIconSvg = (id: string, color: string) => {
-	if (id === 'AccountFull') return <AccountFull color={color} />
+	if (id === 'Account') return <Svg.Account color={color} />
 }
 
 interface IconProps {
@@ -17,7 +17,7 @@ interface IconProps {
 }
 
 const Icon = ({
-	id = 'AccountFull',
+	id = 'Account',
 	width = 24,
 	height = 24,
 	viewBox = '0 0 24 24',
