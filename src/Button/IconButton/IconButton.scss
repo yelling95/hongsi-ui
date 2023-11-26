@@ -1,0 +1,65 @@
+.icon_button_container {
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Emoji", sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --button-padding-tb: 4px;
+  --button-padding-lr: 4px;
+  --font-weight: 600;
+
+  --color: var(--black);
+
+  --disabled-color: var(--primary-button-disabled);
+
+  &.lg {
+    --width: 100%;
+    --height: 50px;
+    --font-size: 18px;
+  }
+
+  &.md {
+    --width: 50px;
+    --height: 50px;
+  }
+
+  &.sm {
+    --width: fit-content;
+    --height: fit-content;
+  }
+
+  &:disabled {
+    color: var(--disabled-color);
+    cursor: default;
+  }
+
+  &:hover {
+    color: var(--color);
+  }
+
+  svg {
+    cursor: pointer;
+  }
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  color: var(--color);
+  cursor: pointer;
+  width: var(--width);
+  height: var(--height);
+  box-sizing: border-box;
+  padding: var(--button-padding-tb) var(--button-padding-lr);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  box-shadow: none;
+  border: 0px;
+  border-radius: 8px;
+  background-color: var(--white);
+}

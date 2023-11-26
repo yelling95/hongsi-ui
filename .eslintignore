@@ -1,2 +1,7 @@
 node_modules/*
 build/*
+storybook-static/*
+*.mdx
+react-app-env.d.ts
+reportWebVitals.ts
+setupTests.ts

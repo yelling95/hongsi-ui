@@ -1,0 +1,38 @@
+import {Meta, IconGallery, IconItem, Controls, Canvas, Story} from '@storybook/blocks'
+import * as IconStories from './Icon.stories'
+import Icon from './Icon'
+
+<Meta of={IconStories} />
+
+# Icon
+
+## Preview
+
+<IconGallery>
+  <IconItem name="Account">
+    <Icon id="Account" />
+  </IconItem>
+  <IconItem name="Like">
+    <Icon id="Like" />
+  </IconItem>
+  <IconItem name="LocationPin">
+    <Icon id="LocationPin" />
+  </IconItem>
+  <IconItem name="More">
+    <Icon id="More" />
+  </IconItem>
+  <IconItem name="Warning">
+    <Icon id="Warning" />
+  </IconItem>
+</IconGallery>
+
+## Props
+
+<Canvas
+  of={IconStories.Primary}
+  source={{
+    code: `<Icon id="Account" width={24} height={24} viewBox="0 0 24 24" color="#393939" style={{}} />`,
+  }}
+/>
+
+<Controls />
