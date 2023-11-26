@@ -2,141 +2,47 @@ import {Meta, ColorPalette, ColorItem} from '@storybook/blocks'
 
 <Meta title="Colors/Theme" />
 
-# Common
+# Basic Color
 
 ---
 
 <br />
 <ColorPalette>
-  <ColorItem title="black" colors={{'--black': '#000000'}} />
-  <ColorItem title="white" colors={{'--black': '#ffffff'}} />
+  <ColorItem title="Black" colors={{'--black': '#393939'}} />
+  <ColorItem title="White" colors={{'--white': '#FFFFFF'}} />
   <ColorItem
-    title="greyscale"
+    title="Greyscale"
     colors={{
-      '--grey-100': '#171717',
-      '--grey-90': '#2e2e2e',
-      '--grey-80': '#454545',
-      '--grey-70': '#5d5d5d',
-      '--grey-60': '#747474',
-      '--grey-50': '#8b8b8b',
-      '--grey-40': '#a2a2a2',
-      '--grey-30': '#b9b9b9',
-      '--grey-20': '#d1d1d1',
-      '--grey-10': '#e8e8e8',
-      '--grey-08': '#ececec',
+      '--grey-80': '#676767',
+      '--grey-60': '#ABABAB',
+      '--grey-50': '#D8D8D8',
+      '--grey-30': '#EFEFEF',
+      '--grey-10': '#FAFAFA',
     }}
   />
-  <ColorItem title="dimmColor" colors={{'--dimm-layer': 'rgba(0, 0, 0, 0.3)'}} />
+  <ColorItem title="dimmColor" colors={{'--dimm-layer': 'rgba(0, 0, 0, 0.4)'}} />
+  <ColorItem title="disableColor" colors={{'--disable-layer': 'rgba(0, 0, 0, 0.6)'}} />
 </ColorPalette>
 
-# Xergy
+# Main Color
 
 ---
 
 <br />
 <ColorPalette>
   <ColorItem
-    title="primary scale"
-    colors={{
-      '--primary-100': '#7c3fff',
-      '--primary-25': '#decfff',
-      '--primary-16': '#eae0ff',
-      '--primary-08': '#f5f0ff',
-      '--primary-06': '#f7f3ff',
-    }}
+    title="Primary"
+    colors={{'--primary-orange': '#ED5500'}}
   />
-  <ColorItem title="primary button pressed" colors={{'--primary-button-pressed': '#6332cc'}} />
-  <ColorItem
-    title="secondary"
-    colors={{
-      '--secondary-100': '#26d6e1',
-      '--secondary-button-pressed': '#22c1ca',
-    }}
-  />
-  <ColorItem title="light grey" colors={{'--light-grey': 'rgba(250, 250, 250, 1)'}} />
-  <ColorItem title="blue grey" colors={{'--blue-grey': 'rgba(240, 245, 249, 1)'}} />
-  <ColorItem
-    title="red"
-    colors={{
-      '--red': 'rgba(241, 74, 114, 1)',
-      '--pale-red': 'rgba(255, 239, 239, 1)',
-    }}
-  />
-  <ColorItem
-    title="green"
-    colors={{
-      '--green': 'rgba(36, 224, 144, 1)',
-      '--pale-green': 'rgba(214, 249, 234, 1)',
-    }}
-  />
-  <ColorItem
-    title="yellow"
-    colors={{
-      '--yellow': 'rgba(255, 201, 66, 1)',
-      '--pale-yellow': 'rgba(255, 247, 220, 1)',
-    }}
-  />
-  <ColorItem
-    title="chart"
-    colors={{
-      '--chart-orange': 'rgba(255, 154, 62, 1)',
-      '--chart-mint': 'rgba(41, 209, 232, 1)',
-    }}
-  />
-</ColorPalette>
+  <ColorItem title="Button pressed" colors={{'--primary-button-pressed': '#B64100'}} />
+  <ColorItem title="Button hovered" colors={{'--primary-button-hover': '#D74000'}} />
+  <ColorItem title="Button disabled" colors={{'--primary-button-disabled': '#ABABAB'}} />
 
-# SI
-
----
-
-<br />
-<ColorPalette>
   <ColorItem
-    title="primary scale"
-    colors={{
-      '--primary-100': '#28a5ec',
-      '--primary-25': '#c9e9fa',
-      '--primary-16': '#ddf1fc',
-      '--primary-08': '#eef8fd',
-      '--primary-06': '#f2fafe',
-    }}
+    title="Secondary"
+    colors={{'--secondary-green': '#055B00'}}
   />
-  <ColorItem title="primary button pressed" colors={{'--primary-button-pressed': '#2589c1'}} />
-  <ColorItem
-    title="secondary"
-    colors={{
-      '--secondary-100': '#1a6a99',
-      '--secondary-button-pressed': '#19597f',
-    }}
-  />
-  <ColorItem title="light grey" colors={{'--light-grey': 'rgba(250, 250, 250, 1)'}} />
-  <ColorItem title="blue grey" colors={{'--blue-grey': 'rgba(240, 245, 249, 1)'}} />
-  <ColorItem
-    title="red"
-    colors={{
-      '--red': 'rgba(241, 74, 114, 1)',
-      '--pale-red': 'rgba(255, 239, 239, 1)',
-    }}
-  />
-  <ColorItem
-    title="green"
-    colors={{
-      '--green': 'rgba(36, 224, 144, 1)',
-      '--pale-green': 'rgba(214, 249, 234, 1)',
-    }}
-  />
-  <ColorItem
-    title="yellow"
-    colors={{
-      '--yellow': 'rgba(255, 201, 66, 1)',
-      '--pale-yellow': 'rgba(255, 247, 220, 1)',
-    }}
-  />
-  <ColorItem
-    title="chart"
-    colors={{
-      '--chart-orange': 'rgba(255, 154, 62, 1)',
-      '--chart-mint': 'rgba(41, 209, 232, 1)',
-    }}
-  />
+  <ColorItem title="Button pressed" colors={{'--secondary-button-pressed': '#022c00'}} />
+  <ColorItem title="Button hovered" colors={{'--secondary-button-hover': '#078301'}} />
+  <ColorItem title="Button disabled" colors={{'--secondary-button-disabled': '#ABABAB'}} />
 </ColorPalette>
