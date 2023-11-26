@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import Chatting from './Chatting'
 
 const meta = {
-	title: 'Web/List/Chatting',
+	title: 'List/Chatting',
 	component: Chatting,
 	parameters: {
 		layout: 'centered',
@@ -16,8 +16,8 @@ export default meta
 
 type Story = StoryObj<typeof meta>
 
-export const Large: Story = {
+export const Basic: Story = {
 	args: {
-		size: 'lg'
+		id: ''
 	},
 }

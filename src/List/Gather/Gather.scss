@@ -7,12 +7,49 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  &.lg {
+    --max-width: 375px;
+    --height: 145px;
+    --padding: 20px;
+    --gap: 13px;
+    --border-color: var(--white);
+
+    --img-size: 100px;
+    --like-pos: 8px;
+    --like-size: 26px;
+
+    --tag-text-size: 12px;
+    --top-margin-bottom: 7px;
+    --title-text-size: 22px;
+    --title-line-height: 30px;
+  }
+
+  &.md {
+    --max-width: 335px;
+    --height: 78px;
+    --padding: 10px;
+    --gap: 10px;
+    --border-color: var(--grey-50);
+
+    --img-size: 58px;
+    --like-pos: 5px;
+    --like-size: 14px;
+
+    --tag-text-size: 10px;
+    --top-margin-bottom: 5px;
+    --title-text-size: 15px;
+    --title-line-height: 18px;
+  }
+
   display: grid;
-  grid-template-columns: 100px auto;
+  grid-template-columns: var(--img-size) auto;
   width: 100%;
-  height: 145px;
-  padding: 20px;
+  max-width: var(--max-width);
+  height: var(--height);
+  padding: var(--padding);
   background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
   gap: 13px;
 
   .message {
@@ -22,7 +59,7 @@
   .img_box {
     position: relative;
     width: 100%;
-    height: 104px;
+    height: var(--img-size);
     border-radius: 5px;
     background-color: var(--white);
 
@@ -34,8 +71,10 @@
 
     & > svg {
       position: absolute;
-      right: 8px;
-      bottom: 8px;
+      width: var(--like-size);
+      height: var(--like-size);
+      right: var(--like-pos);
+      bottom: var(--like-pos);
       z-index: 3;
       cursor: pointer;
     }
@@ -58,6 +97,10 @@
       align-items: center;
     }
 
+    .top {
+      margin-bottom: var(--top-margin-bottom);
+    }
+
     .tag {
       display: flex;
       justify-content: center;
@@ -67,17 +110,15 @@
       background-color: var(--grey-30);
       height: 20px;
 
-      font-weight: 600;
-      letter-spacing: -0.3px;
-      font-size: 12px;
+      font-weight: 700;      
+      font-size: var(--tag-text-size);
       color: var(--grey-60);
     }
 
     .title {
-      font-weight: 600;
-      font-size: 22px;
-      line-height: 30px;
-      letter-spacing: -0.3px;
+      font-weight: 700;
+      font-size: var(--title-text-size);
+      line-height: var(--title-line-height);
       margin-bottom: 5px;
     }
 
@@ -91,9 +132,8 @@
     }
 
     .location, .process {
-      font-weight: 600;
+      font-weight: 700;
       font-size: 12px;
-      letter-spacing: -0.3px;
       color: var(--grey-60);
     }
   }

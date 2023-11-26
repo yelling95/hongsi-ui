@@ -8,6 +8,7 @@ const getIconSvg = (id: string, color: string, fill?: string) => {
 	if (id === 'LocationPin') return <Svg.LocationPin color={color} />
 	if (id === 'More') return <Svg.More color={color} />
 	if (id === 'Warning') return <Svg.Warning color={color} />
+	if (id === 'Default') return <Svg.Default color={color} />
 }
 
 interface IconProps {
@@ -16,7 +17,8 @@ interface IconProps {
 		| 'Like'
 		| 'LocationPin'
 		| 'More'
-		| 'Warning',
+		| 'Warning'
+		| 'Default',
 	width?: number,
 	height?: number,
 	viewBox?: string,

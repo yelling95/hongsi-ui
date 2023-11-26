@@ -21,6 +21,7 @@ const config: StorybookConfig = {
     {
       name: "storybook-addon-sass-postcss",
       options: {
+        loadSassAfterPostCSS: true,
         rule: {
           test: /\.(scss|sass)$/i,
         },

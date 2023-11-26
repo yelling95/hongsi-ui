@@ -31,6 +31,7 @@ import Send from './Send'
 import Share from './Share'
 import Time from './Time'
 import Warning from './Warning'
+import Default from './Default'
 
 export default {
 	Account,
@@ -65,5 +66,6 @@ export default {
 	Send,
 	Share,
 	Time,
-	Warning
+	Warning,
+	Default
 }

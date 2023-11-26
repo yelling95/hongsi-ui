@@ -8,11 +8,80 @@
   -moz-osx-font-smoothing: grayscale;
 
   display: grid;
-  grid-template-columns: 100px auto;
-  width: 100%;
-  height: 145px;
+  grid-template-columns: 76px auto;
+  max-width: 375px;
+  min-height: 116px;
+  max-height: 130px;
   padding: 20px;
   background-color: var(--white);
-  gap: 13px;
+  gap: 14px;
 
+  .img_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background-color: var(--grey-30);
+
+    .unread {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 5%;
+      right: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      color: var(--white);
+      font-weight: 700;
+      font-size: 12px;
+      background-color: var(--marker);
+
+      &.over {
+        font-size: 10px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .contents_box {
+    .top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+
+    .title {
+      display: flex;
+      align-items: flex-end;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 30px;
+      gap: 4px;
+
+      label {
+        font-size: 18px;
+        color: var(--grey-60);
+        line-height: 28px;
+      }
+    }
+
+    .timestamp {
+      font-weight: 500;
+      font-size: 10px;
+      color: var(--grey-70);
+    }
+
+    .message {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      color: var(--grey-80);
+    }
+  }
 }

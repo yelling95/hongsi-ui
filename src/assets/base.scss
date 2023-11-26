@@ -15,3 +15,15 @@
   z-index: 9998;
   background-color: var(--dimm-layer);
 }
+
+@for $i from 1 to 3 {
+  .limit-line-#{$i} {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $i;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    word-break: break-word;
+  }
+}

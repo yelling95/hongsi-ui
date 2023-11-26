@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import Gather from './Gather'
 
 const meta = {
-	title: 'Web/List/Gather',
+	title: 'List/Gather',
 	component: Gather,
 	parameters: {
 		layout: 'centered',
