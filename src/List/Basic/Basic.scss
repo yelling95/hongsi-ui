@@ -1,0 +1,80 @@
+.list_container {
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Emoji", sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.lg {
+    --width: 375px;
+  }
+
+  &.md {
+    --width: 335px;
+  }
+
+  &.primary {
+    --font-weight: 600;
+  }
+
+  &.secondary {
+    --font-weight: 500;
+  }
+
+  max-width: var(--width);
+  width: 100vw;
+  
+  label {
+    font-weight: var(--font-weight);
+  }
+}
+
+.item_container {
+  font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont,
+    system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo",
+    "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Emoji", sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &.lg {
+    --height: 65px;
+    --padding: 20px;
+    --font-size: 18px;
+  }
+
+  &.md {
+    --height: 42px;
+    --padding: 12px 20px;
+    --font-size: 15px;
+  }
+
+  display: flex;
+  width: 100%;
+  height: var(--height);
+  padding: var(--padding);
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  cursor: pointer;
+
+  .icon_button_container svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  &:hover {
+    background-color: var(--grey-30);
+
+    .icon_button_container {
+      background-color: var(--grey-30);
+    }
+  }
+
+  label {
+    font-size: var(--font-size);
+  }
+}

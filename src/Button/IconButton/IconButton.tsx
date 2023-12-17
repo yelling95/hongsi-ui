@@ -9,10 +9,12 @@ interface IconButtonProps {
 		| 'Account'
 		| 'Like'
 		| 'LocationPin'
-		| 'More',
+		| 'More'
+		| 'Close',
   size?: 'sm' | 'md' | 'lg'
   disabled?: boolean
   children?: unknown
+	color?: string
   style?: CSSProperties
   onClick?: () => void
 }
@@ -23,6 +25,7 @@ const IconButton = ({
 	size = 'sm',
 	disabled = false,
 	children = '',
+	color = '#ABABAB',
 	style = {},
 	onClick = () => {},
 	...props
@@ -41,7 +44,7 @@ const IconButton = ({
 			type="button"
 			{...props}
 		>
-			<Icon id={type} color='#ABABAB' />{children}
+			<Icon id={type} color={color} />{children}
 		</button>
 	)
 }
