@@ -1,41 +1,32 @@
 import React, {CSSProperties, ReactElement} from 'react'
-import classname from 'classnames'
+import classNames from 'classnames'
 import {map} from 'lodash-es'
-import {Button} from '../Button'
 
-import './Modal.scss'
+import './Dropdown.scss'
 
-interface ModalButton {
-  type?: 'primary' | 'secondary' | 'line'
-  label?: string
+interface Option {
+  id: string
+  label: string
   click: () => void
 }
 
-type ModalProps = {
+type DropdownProps = {
   isShow?: boolean
   isShowDimm?: boolean
-  buttonList?: Array<ModalButton>
-  children?: ReactElement
+  selected?: string
+  options?: Array<Option>
   style?: CSSProperties
   close?: () => void
 }
 
-export default function Modal({
+export default function Dropdown({
   isShow = false,
   isShowDimm = false,
-  buttonList = [
-    {
-      type: 'primary',
-      label: '확인',
-      click: () => {
-        close()
-      },
-    },
-  ],
-  children,
+  selected = '01',
+  options = [],
   style,
   close = () => {},
-}: ModalProps) {
+}: DropdownProps) {
   const csStyle: CSSProperties = style || {}
 
   React.useEffect(() => {
@@ -82,22 +73,18 @@ export default function Modal({
     }
   }, [isShow])
 
-  const renderButtonWrap = () => {
-    return (
-      <div className={classname('buttons_wrap')}>
-        {map(buttonList, (button, buttonIdx) => (
-          <Button key={`modal-button-${buttonIdx}`} type={button.type} onClick={button.click}>
-            {button.label}
-          </Button>
+  return (
+    <div className={classNames('dropdown_container', 'shadow', isShow && 'open')} style={csStyle}>
+      <div className="option_wrap">
+        {map(options, (opt, optIdx) => (
+          <div
+            key={`dropdown-option-${optIdx}`}
+            className={classNames(opt.id === selected && 'selected')}
+            onClick={opt.click}>
+            {opt.label}
+          </div>
         ))}
       </div>
-    )
-  }
-
-  return (
-    <div className={classname('modal_container', isShow && 'open')} style={csStyle}>
-      <div className="modal_contents">{children}</div>
-      {renderButtonWrap()}
     </div>
   )
 }

@@ -1,24 +1,26 @@
 import React from 'react'
 import type {StoryObj} from '@storybook/react'
-import Modal from './Modal'
+import Dropdown from './Dropdown'
 
-import {Button} from '../Button'
+import {Button} from '../../Button'
+import {range} from 'lodash-es'
 
 const meta = {
-  title: 'Modal',
+  title: 'Modal/Dropdown',
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
   argTypes: {},
-  component: Modal,
+  component: Dropdown,
 }
 
 export default meta
-type Story = StoryObj<typeof Modal>
+type Story = StoryObj<typeof Dropdown>
 
 const ModalWithHooks = (args: any) => {
   const [isOpen, setIsOpen] = React.useState(false)
+  const [selected, setSelected] = React.useState('01')
 
   return (
     <div
@@ -34,37 +36,26 @@ const ModalWithHooks = (args: any) => {
         background: '#EFEFEF',
       }}>
       <Button onClick={() => setIsOpen(true)}>Open!</Button>
-      <Modal isShow={isOpen} isShowDimm={true} close={() => setIsOpen(false)} {...args}>
-        <div>작성 중인 글이 있어요</div>
-        <div>이어서 작성 하실건가요?</div>
-      </Modal>
+      <Dropdown
+        isShow={isOpen}
+        isShowDimm={true}
+        selected={selected}
+        close={() => setIsOpen(false)}
+        {...args}
+      />
     </div>
   )
 }
 
 export const Default: Story = {
   render: (args) => ModalWithHooks(args),
-  args: {},
-}
-
-export const ButtonCustom: Story = {
-  render: (args) => ModalWithHooks(args),
   args: {
-    buttonList: [
-      {
-        type: 'primary',
-        label: '확인',
-        click: () => {
-          alert('확인')
-        },
+    options: range(1, 11, 1).map((opt) => ({
+      id: opt < 10 ? '0' + opt : '' + opt,
+      label: '아이템 ' + opt,
+      click: () => {
+        alert('아이템 ' + opt)
       },
-      {
-        type: 'secondary',
-        label: '취소',
-        click: () => {
-          alert('취소')
-        },
-      },
-    ],
+    })),
   },
 }
