@@ -21,11 +21,11 @@ const Basic = ({
 }: BasicProps & React.HTMLAttributes<HTMLButtonElement>) => {
 	return (
 		<div id={id} className={classnames('list_container', size || 'lg', type || 'primary')}>
-			<Item title={'제목1'} />
-			<Item title={'제목2'} />
-			<Item title={'제목3'} />
-			<Item title={'제목4'} />
-			<Item title={'제목5'} />
+			<Item title={'제목1'} size={size} />
+			<Item title={'제목2'} size={size} />
+			<Item title={'제목3'} size={size} />
+			<Item title={'제목4'} size={size} />
+			<Item title={'제목5'} size={size} />
 		</div>
 	)
 }

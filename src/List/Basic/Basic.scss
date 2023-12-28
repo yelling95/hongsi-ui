@@ -41,12 +41,14 @@
   -moz-osx-font-smoothing: grayscale;
 
   &.lg {
+    --width: 375px;
     --height: 65px;
     --padding: 20px;
     --font-size: 18px;
   }
 
   &.md {
+    --width: 335px;
     --height: 42px;
     --padding: 12px 20px;
     --font-size: 15px;
