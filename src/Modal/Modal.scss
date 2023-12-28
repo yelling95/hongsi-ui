@@ -1,0 +1,33 @@
+.modal_container {
+
+  --max-width: 330px;
+
+  display: none;
+  position: fixed;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 88%;
+  max-width: var(--max-width);
+  background-color: var(--white);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 12px;
+  padding: 20px;
+  gap: 20px;
+
+  &.open {
+    display: flex;
+  }
+
+  .buttons_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
