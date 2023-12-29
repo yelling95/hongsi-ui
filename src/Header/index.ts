@@ -1,2 +1,2 @@
 export {default as HomeHeader} from './Home/HomeHeader'
-export {default as PostHeader} from './Post/PostHeader'
+export {default as ReadHeader} from './Read/ReadHeader'

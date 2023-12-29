@@ -1,20 +1,19 @@
 import type {StoryObj, Meta} from '@storybook/react'
-import {range} from 'lodash-es'
 
-import PostHeader from './PostHeader'
+import ReadHeader from './ReadHeader'
 
 const meta = {
-  title: 'Header/PostHeader',
-  component: PostHeader,
+  title: 'Header/ReadHeader',
+  component: ReadHeader,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof PostHeader>
+} satisfies Meta<typeof ReadHeader>
 
 export default meta
-type Story = StoryObj<typeof PostHeader>
+type Story = StoryObj<typeof ReadHeader>
 
 export const Default: Story = {
   args: {},

@@ -1,0 +1,33 @@
+.header_container {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Emoji', sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-width: 375px;
+  height: 47px;
+
+  .back_wrap {
+    cursor: pointer;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .buttons_wrap {
+    display: flex;
+    gap: 24px;
+
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--primary-orange);
+  }
+}

@@ -1,21 +1,20 @@
 import React from 'react'
-import classnames from 'classnames'
-import './PostHeader.scss'
+import './ReadHeader.scss'
 
 import {IconButton} from '../../Button'
 
-interface PostHeaderProps {
+interface ReadHeaderProps {
   goBack: () => void
   openShard: () => void
   openMore: () => void
 }
 
-const PostHeader = ({
+const ReadHeader = ({
   goBack = () => {},
   openShard = () => {},
   openMore = () => {},
   ...props
-}: PostHeaderProps & React.HTMLAttributes<HTMLButtonElement>) => {
+}: ReadHeaderProps & React.HTMLAttributes<HTMLButtonElement>) => {
   return (
     <div className="header_container">
       <div className="back_wrap">
@@ -29,4 +28,4 @@ const PostHeader = ({
   )
 }
 
-export default PostHeader
+export default ReadHeader
