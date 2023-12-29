@@ -16,15 +16,18 @@
 
     --disabled-color: var(--grey-60);
     --disabled-background: var(--grey-50);
+
+    border-bottom: 1px solid var(--border-color);
+    caret-color: var(--primary-orange);
   }
 
   &.md {
-    --font-weight: 400;
-    --font-size: 14px;
+    --font-weight: 600;
+    --font-size: 15px;
     --line-height: 17px;
-    --input-height: 40px;
+    --input-height: 34px;
     --input-border-radius: 8px;
-    --input-padding: 8px 18px;
+    --input-padding: 8px 12px;
 
     --background-color: var(--grey-30);
     --color: var(--black);
@@ -35,15 +38,17 @@
 
     --disabled-color: var(--grey-60);
     --disabled-background: var(--grey-50);
+
+    border: 1px solid var(--border-color);
   }
 
   &.sm {
-    --font-weight: 400;
-    --font-size: 14px;
+    --font-weight: 600;
+    --font-size: 15px;
     --line-height: 17px;
-    --input-height: 40px;
+    --input-height: 34px;
     --input-border-radius: 8px;
-    --input-padding: 8px 18px;
+    --input-padding: 8px 12px;
 
     --background-color: var(--grey-30);
     --color: var(--black);
@@ -54,6 +59,8 @@
 
     --disabled-color: var(--grey-60);
     --disabled-background: var(--grey-50);
+
+    border: 1px solid var(--border-color);
   }
 
   .input_wrap {
@@ -62,8 +69,6 @@
     display: -webkit-flex;
     justify-content: center;
     align-items: center;
-
-    border: 1px solid var(--border-color);
     height: var(--input-height);
 
     box-shadow: none;
@@ -103,6 +108,8 @@
       font-weight: var(--font-weight);
       line-height: var(--line-height);
       color: var(--color);
+      caret-color: var(--primary-orange);
+      background-color: transparent;
       outline: none;
       outline: none;
       border: none;

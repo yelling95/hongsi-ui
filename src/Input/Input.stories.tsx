@@ -35,6 +35,30 @@ export const Default: Story = {
   },
 }
 
+export const Large: Story = {
+  render: (args) => InputWithHooks(args),
+  args: {
+    type: 'default',
+    size: 'lg',
+  },
+}
+
+export const Medium: Story = {
+  render: (args) => InputWithHooks(args),
+  args: {
+    type: 'default',
+    size: 'md',
+  },
+}
+
+export const Small: Story = {
+  render: (args) => InputWithHooks(args),
+  args: {
+    type: 'default',
+    size: 'sm',
+  },
+}
+
 export const Search: Story = {
   render: (args) => InputWithHooks(args),
   args: {
