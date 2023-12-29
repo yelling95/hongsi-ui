@@ -15,6 +15,7 @@ const getIconSvg = (id: string, color: string, fill?: string) => {
   if (id === 'Right') return <Svg.Left color={color} />
   if (id === 'Share') return <Svg.Share color={color} />
   if (id === 'More') return <Svg.More color={color} />
+  if (id === 'Clear') return <Svg.Clear color={color} />
   if (id === 'Default') return <Svg.Default color={color} />
 }
 
@@ -32,6 +33,7 @@ interface IconProps {
     | 'Right'
     | 'Share'
     | 'More'
+    | 'Clear'
     | 'Default'
   width?: number
   height?: number

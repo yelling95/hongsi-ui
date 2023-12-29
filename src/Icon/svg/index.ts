@@ -32,6 +32,7 @@ import Share from './Share'
 import Time from './Time'
 import Warning from './Warning'
 import Default from './Default'
+import Clear from './Clear'
 
 export default {
   Account,
@@ -68,4 +69,5 @@ export default {
   Time,
   Warning,
   Default,
+  Clear,
 }
