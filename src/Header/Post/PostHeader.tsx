@@ -4,25 +4,18 @@ import './PostHeader.scss'
 
 import {IconButton} from '../../Button'
 
-interface Option {
-  url: string
-  label: string
-}
-
 interface PostHeaderProps {
-  options: Array<Option>
+  goBack: () => void
+  openShard: () => void
+  openMore: () => void
 }
 
 const PostHeader = ({
-  options = [],
+  goBack = () => {},
+  openShard = () => {},
+  openMore = () => {},
   ...props
 }: PostHeaderProps & React.HTMLAttributes<HTMLButtonElement>) => {
-  const goBack = () => {
-    window.history.back()
-  }
-
-  const openShard = () => {}
-
   return (
     <div className="header_container">
       <div className="back_wrap">
@@ -30,7 +23,7 @@ const PostHeader = ({
       </div>
       <div className="buttons_wrap">
         <IconButton type="Share" size="sm" color="#393939" onClick={openShard} />
-        <IconButton type="More" size="sm" color="#393939" onClick={() => {}} />
+        <IconButton type="More" size="sm" color="#393939" onClick={openMore} />
       </div>
     </div>
   )

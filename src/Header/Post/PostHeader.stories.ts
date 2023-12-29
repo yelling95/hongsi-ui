@@ -1,4 +1,5 @@
-import type {Meta, StoryObj} from '@storybook/react'
+import type {StoryObj, Meta} from '@storybook/react'
+import {range} from 'lodash-es'
 
 import PostHeader from './PostHeader'
 
@@ -13,8 +14,7 @@ const meta = {
 } satisfies Meta<typeof PostHeader>
 
 export default meta
-
-type Story = StoryObj<typeof meta>
+type Story = StoryObj<typeof PostHeader>
 
 export const Default: Story = {
   args: {},
