@@ -1,23 +1,23 @@
 import React from 'react'
 import type {StoryObj} from '@storybook/react'
-import Input from './Input'
+import TextField from './TextField'
 
 const meta = {
-  title: 'component/Input',
+  title: 'component/TextField',
   parameters: {},
   tags: ['autodocs'],
   argTypes: {},
-  component: Input,
+  component: TextField,
 }
 
 export default meta
-type Story = StoryObj<typeof Input>
+type Story = StoryObj<typeof TextField>
 
 const InputWithHooks = (args: any) => {
   const [value, setValue] = React.useState(args.value || '')
 
   return (
-    <Input
+    <TextField
       {...args}
       value={value}
       onChange={({value}) => {

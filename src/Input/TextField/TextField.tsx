@@ -1,11 +1,11 @@
 import classname from 'classnames'
 import React, {CSSProperties} from 'react'
 import {last} from 'lodash-es'
-import {Icon} from '../Icon'
-import {convertThousandSeparator, makePhoneNumber} from './const'
-import './Input.scss'
+import {Icon} from '../../Icon'
+import {convertThousandSeparator, makePhoneNumber} from '../const'
+import './TextField.scss'
 
-type InputProps = {
+type TextFieldProps = {
   id?: string
   size?: 'lg' | 'md' | 'sm'
   style?: CSSProperties
@@ -27,7 +27,7 @@ type InputProps = {
   onChange: (e: {id: string | null; value: string | undefined}) => void
 }
 
-export default function Input({
+export default function TextField({
   id,
   size,
   style,
@@ -48,7 +48,7 @@ export default function Input({
   regExp,
   onChange,
   ...rest
-}: InputProps) {
+}: TextFieldProps) {
   const inputFocus = React.useRef<HTMLInputElement>(null)
   const csStyle: CSSProperties = style || {}
 
@@ -169,7 +169,7 @@ export default function Input({
   )
 }
 
-Input.defaultProps = {
+TextField.defaultProps = {
   size: 'lg',
   type: 'default',
   placeholder: '입력해주세요.',
