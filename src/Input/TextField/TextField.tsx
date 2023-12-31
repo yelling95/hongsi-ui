@@ -146,6 +146,9 @@ export default function TextField({
             <Icon
               id="Clear"
               color="#ABABAB"
+              width={16}
+              height={16}
+              viewBox="0 0 16 16"
               style={{cursor: 'pointer'}}
               onClick={(e) => {
                 if (inputFocus.current) {

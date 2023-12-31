@@ -6,12 +6,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 32px auto;
   width: 100%;
   min-width: 375px;
   height: 47px;
+  gap: 11px;
 
   .back_wrap {
     cursor: pointer;
