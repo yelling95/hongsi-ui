@@ -1,29 +1,35 @@
-import type { Meta, StoryObj } from '@storybook/react'
+import type {Meta, StoryObj} from '@storybook/react'
 
 import Tag from './Tag'
 
 const meta = {
-	title: 'Tag',
-	component: Tag,
-	parameters: {
-		layout: 'centered',
-	},
-	tags: ['autodocs'],
-	argTypes: {},
+  title: 'Tag',
+  component: Tag,
+  parameters: {
+    layout: 'centered',
+  },
+  tags: ['autodocs'],
+  argTypes: {},
 } satisfies Meta<typeof Tag>
 
 export default meta
 
 type Story = StoryObj<typeof meta>
 
+export const Large: Story = {
+  args: {
+    size: 'lg',
+  },
+}
+
 export const Medium: Story = {
-	args: {
-		size: 'md'
-	},
+  args: {
+    size: 'md',
+  },
 }
 
 export const Small: Story = {
-	args: {
-		size: 'sm'
-	},
+  args: {
+    size: 'sm',
+  },
 }

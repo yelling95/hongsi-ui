@@ -74,7 +74,7 @@ export default function Dropdown({
   }, [isShow])
 
   return (
-    <div className={classNames('dropdown_container', 'shadow', isShow && 'open')} style={csStyle}>
+    <div className={classNames('dropdown_container', 'slider', isShow && 'open')} style={csStyle}>
       <div className="option_wrap">
         {map(options, (opt, optIdx) => (
           <div

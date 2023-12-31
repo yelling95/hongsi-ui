@@ -1,10 +1,10 @@
-import React, { CSSProperties } from 'react'
+import React, {CSSProperties} from 'react'
 import classnames from 'classnames'
 import './Tag.scss'
 
 interface TagProps {
   id?: string
-  size?: 'sm' | 'md'
+  size?: 'lg' | 'md' | 'sm'
   selected?: boolean
   children?: unknown
   style?: CSSProperties
@@ -12,30 +12,24 @@ interface TagProps {
 }
 
 const Tag = ({
-	id,
-	size = 'sm',
-	selected = false,
-	children = 'Tag',
-	style = {},
-	onClick = () => {},
-	...props
+  id,
+  size = 'lg',
+  selected = false,
+  children = 'Tag',
+  style = {},
+  onClick = () => {},
+  ...props
 }: TagProps & React.HTMLAttributes<HTMLButtonElement>) => {
-	
-	return (
-		<button
-			id={id}
-			className={classnames(
-				'tag_container',
-				size || 'lg',
-				selected && 'selected'
-			)}
-			onClick={onClick}
-			style={style}
-			{...props}
-		>
-			{children}
-		</button>
-	)
+  return (
+    <button
+      id={id}
+      className={classnames('tag_container', size || 'lg', selected && 'selected')}
+      onClick={onClick}
+      style={style}
+      {...props}>
+      {children}
+    </button>
+  )
 }
 
 export default Tag

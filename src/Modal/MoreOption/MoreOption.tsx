@@ -20,7 +20,7 @@ type MoreOptionProps = {
 }
 
 export default function MoreOption({
-  isShow = false,
+  isShow = true,
   isShowDimm = false,
   selected = '01',
   options = [],
@@ -74,7 +74,7 @@ export default function MoreOption({
   }, [isShow])
 
   return (
-    <div className={classNames('moreopt_container', 'shadow', isShow && 'open')} style={csStyle}>
+    <div className={classNames('moreopt_container', 'slider', isShow && 'open')} style={csStyle}>
       <div className="option_wrap">
         {map(options, (opt, optIdx) => (
           <div

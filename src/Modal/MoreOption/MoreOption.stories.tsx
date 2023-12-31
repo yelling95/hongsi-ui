@@ -50,7 +50,7 @@ const ModalWithHooks = (args: any) => {
 export const Default: Story = {
   render: (args) => ModalWithHooks(args),
   args: {
-    options: range(1, 11, 1).map((opt) => ({
+    options: range(1, 21, 1).map((opt) => ({
       id: opt < 10 ? '0' + opt : '' + opt,
       label: '아이템 ' + opt,
       click: () => {

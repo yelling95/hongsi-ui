@@ -1,5 +1,6 @@
 import React, {CSSProperties} from 'react'
 import {Icon} from '../../Icon'
+import {Tag} from '../../Tag'
 import classnames from 'classnames'
 
 import './Gather.scss'
@@ -59,7 +60,7 @@ const Gather = ({
       </div>
       <div className="contents_box" onClick={onClick}>
         <div className="top">
-          <div className="tag">{tagname}</div>
+          <Tag size={size === 'lg' ? 'md' : 'sm'} />
         </div>
         <div className="title limit-line-2">{title}</div>
         <div className="bottom">

@@ -13,7 +13,8 @@
     --gap: 13px;
     --border-color: var(--white);
 
-    --img-size: 100px;
+    --img-width-size: 100px;
+    --img-height-size: 104px;
     --like-pos: 8px;
     --like-size: 26px;
 
@@ -30,7 +31,8 @@
     --gap: 10px;
     --border-color: var(--grey-50);
 
-    --img-size: 58px;
+    --img-width-size: 58px;
+    --img-height-size: 58px;
     --like-pos: 5px;
     --like-size: 14px;
 
@@ -38,10 +40,14 @@
     --top-margin-bottom: 5px;
     --title-text-size: 15px;
     --title-line-height: 18px;
+
+    .img_box > svg {
+      display: none;
+    }
   }
 
   display: grid;
-  grid-template-columns: var(--img-size) auto;
+  grid-template-columns: var(--img-width-size) auto;
   width: 100%;
   max-width: var(--max-width);
   height: var(--height);
@@ -58,7 +64,7 @@
   .img_box {
     position: relative;
     width: 100%;
-    height: var(--img-size);
+    height: var(--img-height-size);
     border-radius: 5px;
     background-color: var(--white);
     overflow: hidden;

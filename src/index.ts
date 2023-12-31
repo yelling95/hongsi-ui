@@ -1,6 +1,7 @@
 import './assets/color.scss'
 import './assets/font.scss'
 import './assets/base.scss'
+import './assets/anim.scss'
 export * from './Button'
 export * from './Icon'
 export * from './List'
