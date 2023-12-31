@@ -16,6 +16,11 @@ const getIconSvg = (id: string, color: string, fill?: string) => {
   if (id === 'Share') return <Svg.Share color={color} />
   if (id === 'More') return <Svg.More color={color} />
   if (id === 'Clear') return <Svg.Clear color={color} />
+  if (id === 'Notification')
+    return fill ? <Svg.NotificationFull color={fill} /> : <Svg.Notification color={color} />
+  if (id === 'NotificationNone') return <Svg.NotificationNone color={color} />
+  if (id === 'Filter') return <Svg.Filter color={color} />
+  if (id === 'Dropdown') return <Svg.Dropdown color={color} />
   if (id === 'Default') return <Svg.Default color={color} />
 }
 
@@ -34,6 +39,10 @@ interface IconProps {
     | 'Share'
     | 'More'
     | 'Clear'
+    | 'Notification'
+    | 'NotificationNone'
+    | 'Filter'
+    | 'Dropdown'
     | 'Default'
   width?: number
   height?: number

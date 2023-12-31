@@ -17,7 +17,7 @@ const WriteHeader = ({
   ...props
 }: WriteHeaderProps & React.HTMLAttributes<HTMLButtonElement>) => {
   return (
-    <div className="header_container">
+    <div className="write_header_container">
       <div className="back_wrap">
         <IconButton type="Right" size="sm" color="#393939" onClick={goBack} />
       </div>

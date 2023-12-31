@@ -18,12 +18,20 @@ interface IconButtonProps {
     | 'Right'
     | 'Share'
     | 'More'
+    | 'Clear'
+    | 'Notification'
+    | 'NotificationNone'
+    | 'Filter'
+    | 'Dropdown'
     | 'Default'
   size?: 'sm' | 'md' | 'lg'
   disabled?: boolean
   children?: unknown
   color?: string
   style?: CSSProperties
+  fill?: string
+  iconWidth?: number
+  iconHeight?: number
   onClick?: () => void
 }
 
@@ -34,6 +42,9 @@ const IconButton = ({
   disabled = false,
   children = '',
   color = '#ABABAB',
+  fill,
+  iconWidth,
+  iconHeight,
   style = {},
   onClick = () => {},
   ...props
@@ -47,7 +58,19 @@ const IconButton = ({
       disabled={disabled}
       type="button"
       {...props}>
-      <Icon id={type} color={color} transform={type === 'Right' ? 'rotate(180)' : 'rotate(0)'} />
+      <Icon
+        id={type}
+        color={color}
+        fill={fill}
+        width={iconWidth}
+        height={iconHeight}
+        viewBox={
+          iconWidth !== undefined && iconHeight !== undefined
+            ? `0 0 ${iconWidth} ${iconHeight}`
+            : '0 0 24 24'
+        }
+        transform={type === 'Right' ? 'rotate(180)' : 'rotate(0)'}
+      />
       {children}
     </button>
   )

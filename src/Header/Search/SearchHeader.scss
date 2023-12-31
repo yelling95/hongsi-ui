@@ -1,4 +1,4 @@
-.header_container {
+.search_header_container {
   font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Emoji', sans-serif;
@@ -7,7 +7,8 @@
   -moz-osx-font-smoothing: grayscale;
 
   display: grid;
-  grid-template-columns: 32px auto;
+  grid-template-columns: 24px auto;
+  align-items: center;
   width: 100%;
   min-width: 375px;
   height: 47px;

@@ -30,7 +30,7 @@ const HomeHeader = ({
   }
 
   return (
-    <div className="header_container">
+    <div className="home_header_container">
       <div className="logo_wrap">
         <img src={LogoImage} alt="홍시" onClick={goHome} />
       </div>

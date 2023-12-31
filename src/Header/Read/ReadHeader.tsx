@@ -16,7 +16,7 @@ const ReadHeader = ({
   ...props
 }: ReadHeaderProps & React.HTMLAttributes<HTMLButtonElement>) => {
   return (
-    <div className="header_container">
+    <div className="read_header_container">
       <div className="back_wrap">
         <IconButton type="Right" size="sm" color="#393939" onClick={goBack} />
       </div>

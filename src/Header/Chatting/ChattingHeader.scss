@@ -1,4 +1,4 @@
-.home_header_container {
+.chatting_header_container {
   font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, Roboto,
     'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Emoji', sans-serif;
@@ -13,8 +13,17 @@
   min-width: 375px;
   height: 47px;
 
-  .logo_wrap {
+  .back_wrap {
+    display: flex;
+    align-items: flex-start;
     cursor: pointer;
+    gap: 10px;
+
+    .title {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 25px;
+    }
   }
 
   .buttons_wrap {

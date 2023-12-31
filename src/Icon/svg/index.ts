@@ -33,6 +33,7 @@ import Time from './Time'
 import Warning from './Warning'
 import Default from './Default'
 import Clear from './Clear'
+import Filter from './Filter'
 
 export default {
   Account,
@@ -70,4 +71,5 @@ export default {
   Warning,
   Default,
   Clear,
+  Filter,
 }
