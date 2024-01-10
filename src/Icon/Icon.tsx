@@ -3,7 +3,11 @@ import Svg from './svg'
 import './Icon.scss'
 
 const getIconSvg = (id: string, color: string, fill?: string) => {
-  if (id === 'Account') return <Svg.Account color={color} />
+  if (id === 'Account')
+    return fill ? <Svg.AccountFull color={fill} /> : <Svg.Account color={color} />
+  if (id === 'Home') return fill ? <Svg.HomeFull color={fill} /> : <Svg.Home color={color} />
+  if (id === 'Group') return fill ? <Svg.GroupFull color={fill} /> : <Svg.Group color={color} />
+  if (id === 'Chat') return fill ? <Svg.ChatFull color={fill} /> : <Svg.Chat color={color} />
   if (id === 'Like') return fill ? <Svg.LikeFull color={fill} /> : <Svg.Like color={color} />
   if (id === 'LocationPin') return <Svg.LocationPin color={color} />
   if (id === 'More') return <Svg.More color={color} />
@@ -43,6 +47,9 @@ interface IconProps {
     | 'NotificationNone'
     | 'Filter'
     | 'Dropdown'
+    | 'Home'
+    | 'Group'
+    | 'Chat'
     | 'Default'
   width?: number
   height?: number
