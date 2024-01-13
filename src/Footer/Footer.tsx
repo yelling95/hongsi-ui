@@ -27,15 +27,17 @@ const Footer = ({
       <div className="menu_wrap">
         {map(menuList, ({id, path, icon, active, unread}) => (
           <div key={`menu-${id}`} className={classnames(active ? ['menu', 'active'] : 'menu')}>
-            <Icon
-              id={icon}
-              width={26}
-              height={26}
-              viewBox="0 0 26 26"
-              color="#393939"
-              fill={active ? '#393939' : undefined}
-            />
-            {unread && <div className="unread">{unread}</div>}
+            <div className="icon_wrap">
+              <Icon
+                id={icon}
+                width={26}
+                height={26}
+                viewBox="0 0 26 26"
+                color="#393939"
+                fill={active ? '#393939' : undefined}
+              />
+              {unread && <div className="unread">{unread}</div>}
+            </div>
           </div>
         ))}
       </div>
