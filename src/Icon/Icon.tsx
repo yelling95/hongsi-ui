@@ -25,6 +25,8 @@ const getIconSvg = (id: string, color: string, fill?: string) => {
   if (id === 'NotificationNone') return <Svg.NotificationNone color={color} />
   if (id === 'Filter') return <Svg.Filter color={color} />
   if (id === 'Dropdown') return <Svg.Dropdown color={color} />
+  if (id === 'Check') return <Svg.Check color={color} />
+  if (id === 'Collapse') return <Svg.Collapse color={color} />
   if (id === 'Default') return <Svg.Default color={color} />
 }
 
@@ -50,6 +52,8 @@ interface IconProps {
     | 'Home'
     | 'Group'
     | 'Chat'
+    | 'Check'
+    | 'Collapse'
     | 'Default'
   width?: number
   height?: number

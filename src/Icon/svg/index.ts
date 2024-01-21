@@ -34,6 +34,7 @@ import Warning from './Warning'
 import Default from './Default'
 import Clear from './Clear'
 import Filter from './Filter'
+import Collapse from './Collapse'
 
 export default {
   Account,
@@ -72,4 +73,5 @@ export default {
   Default,
   Clear,
   Filter,
+  Collapse,
 }

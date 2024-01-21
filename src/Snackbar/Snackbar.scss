@@ -1,0 +1,56 @@
+.snackbar_container {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Emoji', sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 335px;
+  height: 50px;
+  padding: 16px 20px;
+  background-color: var(--black);
+  border-radius: 10px;
+  animation: snackbar 1s ease 0s 1 normal forwards;
+
+  &.open {
+    display: flex;
+  }
+
+  .message_wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+    color: var(--white);
+
+    .icon_wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      background-color: var(--primary-orange);
+
+      svg {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+
+  .button_wrap {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 700;
+    color: var(--primary-orange);
+    cursor: pointer;
+  }
+}

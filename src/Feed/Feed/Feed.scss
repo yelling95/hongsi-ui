@@ -1,0 +1,142 @@
+.feed_container {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Emoji', sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  width: 375px;
+  padding: 20px;
+
+  .header_wrap {
+    display: grid;
+    grid-template-columns: 42px auto 24px;
+    gap: 9px;
+    margin-bottom: 16px;
+
+    .img_box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background-color: var(--grey-30);
+
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    .user_wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      .name {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 18px;
+        color: var(--black);
+      }
+      .extra {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        color: var(--grey-80);
+      }
+    }
+  }
+
+  .body_wrap {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+
+    .title {
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 30px;
+    }
+
+    a {
+      color: var(--grey-80);
+      text-decoration: none;
+    }
+
+    .slider_wrap {
+      width: 335px;
+      height: 325px;
+      border-radius: 5px;
+      background: #d9d9d9;
+      overflow: hidden;
+
+      .img_wrap div {
+        width: 335px;
+        height: 325px;
+        background-position: center;
+      }
+    }
+  }
+
+  .declare_wrap {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+
+    &.show_contents {
+      margin-bottom: 20px;
+    }
+
+    .message {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--grey-60);
+    }
+
+    .collapse {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--grey-60);
+      cursor: pointer;
+
+      &.close {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  .footer_wrap {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+
+    .status_wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      color: var(--grey-80);
+    }
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .hide {
+    display: none;
+  }
+}
