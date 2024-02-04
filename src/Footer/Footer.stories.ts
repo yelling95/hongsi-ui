@@ -24,6 +24,7 @@ export const Default: Story = {
         path: '/home',
         icon: 'Home',
         active: true,
+        unread: 0,
         onClick: () => {
           alert('home')
         },
@@ -33,6 +34,7 @@ export const Default: Story = {
         path: '/group',
         icon: 'Group',
         active: false,
+        unread: 2,
         onClick: () => {
           alert('group')
         },
@@ -42,6 +44,7 @@ export const Default: Story = {
         path: '/chat',
         icon: 'Chat',
         active: false,
+        unreadStyle: 'number',
         unread: 4,
         onClick: () => {
           alert('chat')
@@ -52,6 +55,7 @@ export const Default: Story = {
         path: '/mypage',
         icon: 'Account',
         active: false,
+        unread: 4,
         onClick: () => {
           alert('mypage')
         },

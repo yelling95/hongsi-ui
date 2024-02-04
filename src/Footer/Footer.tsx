@@ -10,7 +10,8 @@ interface Menu {
   path: string
   icon?: 'Home' | 'Group' | 'Chat' | 'Account'
   active: boolean
-  unread?: number
+  unread: number
+  unreadStyle?: 'default' | 'number'
   onClick?: () => void
 }
 
@@ -25,7 +26,7 @@ const Footer = ({
   return (
     <div className="footer_container">
       <div className="menu_wrap">
-        {map(menuList, ({id, path, icon, active, unread}) => (
+        {map(menuList, ({id, path, icon, active, unread, unreadStyle}) => (
           <div key={`menu-${id}`} className={classnames(active ? ['menu', 'active'] : 'menu')}>
             <div className="icon_wrap">
               <Icon
@@ -36,7 +37,11 @@ const Footer = ({
                 color="#393939"
                 fill={active ? '#393939' : undefined}
               />
-              {unread && <div className="unread">{unread}</div>}
+              {unread > 0 && (
+                <div className={classnames(unreadStyle === 'number' ? 'unread' : 'unread_point')}>
+                  <span>{unread}</span>
+                </div>
+              )}
             </div>
           </div>
         ))}

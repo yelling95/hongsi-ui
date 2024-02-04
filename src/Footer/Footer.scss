@@ -39,6 +39,24 @@
           left: 12px;
           top: -6px;
         }
+
+        .unread_point {
+          span {
+            display: none;
+          }
+
+          &::after {
+            content: '';
+            position: absolute;
+            right: -3px;
+            top: 0;
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: var(--primary-orange);
+          }
+        }
       }
     }
   }
