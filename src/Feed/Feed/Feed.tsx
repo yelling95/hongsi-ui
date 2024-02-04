@@ -102,8 +102,7 @@ const Feed = ({
       </div>
       <div className={classnames('body_wrap', isHideContents && 'hide')}>
         <div className="title">{title}</div>
-        <div className="limit-line-2">{subtitle}</div>
-        <a href="#">더 보기</a>
+        <SubTitle subtitle={subtitle} />
         {imgList && imgList.length > 0 && (
           <div className="slider_wrap">
             <Slider {...sliderOpt}>
@@ -132,6 +131,20 @@ const Feed = ({
         </div>
       </div>
     </div>
+  )
+}
+
+const SubTitle = ({subtitle = ''}) => {
+  const [showAll, setShowAll] = React.useState(false)
+  return showAll === false && subtitle.length > 35 ? (
+    <div>
+      {subtitle.substring(0, 35)}...
+      <a href="#none" title="더 보기" onClick={() => setShowAll(true)}>
+        더 보기
+      </a>
+    </div>
+  ) : (
+    <div>{subtitle}</div>
   )
 }
 
