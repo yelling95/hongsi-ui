@@ -104,12 +104,12 @@ const Feed = ({
         <div className="title">{title}</div>
         <SubTitle subtitle={subtitle} />
         {imgList && imgList.length > 0 && (
-          <div className="slider_wrap">
+          <div className="slider_wrap" style={{height: 540}}>
             <Slider {...sliderOpt}>
               {map(imgList, (img, index) => {
                 return (
                   <div key={`slider-img-${index}`} className="img_wrap">
-                    <div style={{backgroundImage: `url('${img.url}')`}}></div>
+                    <div style={{height: 540, backgroundImage: `url('${img.url}')`}}></div>
                   </div>
                 )
               })}
