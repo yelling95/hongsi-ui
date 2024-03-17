@@ -1,4 +1,4 @@
-import classname from 'classnames'
+import classnames from 'classnames'
 import React, {CSSProperties} from 'react'
 import {last} from 'lodash-es'
 import {Icon} from '../../Icon'
@@ -23,6 +23,7 @@ type TextFieldProps = {
   hasEndAdornment?: boolean
   endAdornmentEl?: any
   handleFocus?: boolean
+  isShowClear?: boolean
   regExp?: RegExp
   onChange: (e: {id: string | null; value: string | undefined}) => void
 }
@@ -45,9 +46,10 @@ export default function TextField({
   hasEndAdornment,
   endAdornmentEl,
   handleFocus,
+  isShowClear,
   regExp,
   onChange,
-  ...rest
+  ...props
 }: TextFieldProps) {
   const inputFocus = React.useRef<HTMLInputElement>(null)
   const csStyle: CSSProperties = style || {}
@@ -107,11 +109,8 @@ export default function TextField({
     }
   }, [handleFocus, inputFocus])
 
-  // const isShowClear = isFocus && (value ? value !== '' : false)
-  const isShowClear = true
-
   return (
-    <div className={classname('input_container', className, size)} style={csStyle}>
+    <div className={classnames('input_container', className, size)} style={csStyle}>
       {label && (
         <span className="input_label">
           {label}&nbsp;
@@ -119,7 +118,7 @@ export default function TextField({
         </span>
       )}
       <div
-        className={classname(
+        className={classnames(
           'input_wrap',
           type,
           isState,
@@ -138,7 +137,7 @@ export default function TextField({
           onFocus={() => setIsFocus(true)}
           onBlur={() => setIsFocus(false)}
           type={inputType || 'text'}
-          {...rest}
+          {...props}
         />
 
         <div className="adornment_wrap end">
@@ -177,6 +176,7 @@ TextField.defaultProps = {
   type: 'default',
   placeholder: '입력해주세요.',
   handleFocus: false,
+  isShowClear: false,
   regExp: undefined,
   onChange: () => {},
 }

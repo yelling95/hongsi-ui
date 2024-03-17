@@ -1,5 +1,4 @@
 import React, {CSSProperties} from 'react'
-import classnames from 'classnames'
 import parser from 'html-react-parser'
 import {Icon} from '../Icon'
 

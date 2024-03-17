@@ -72,6 +72,7 @@
     "html-react-parser": "^5.1.0",
     "moment": "^2.29.4",
     "prop-types": "^15.8.1",
+    "react-content-loader": "^6.2.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
     "style-inject": "^0.3.0",

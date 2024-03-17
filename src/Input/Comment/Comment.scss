@@ -1,0 +1,68 @@
+.comment_container {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic',
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Emoji', sans-serif;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: grid;
+  grid-template-columns: auto 33px;
+  max-width: 375px;
+  max-height: 321px;
+  overflow-y: auto;
+  padding: 14.13px 20px;
+  background-color: forestgreen;
+
+  &.lg {
+    --font-weight: 500;
+    --font-size: 18px;
+    --line-height: 28px;
+    --input-height: 34px;
+  }
+
+  &.md {
+    --font-weight: 600;
+    --font-size: 15px;
+    --line-height: 17px;
+    --input-height: 34px;
+  }
+
+  &.sm {
+    --font-weight: 600;
+    --font-size: 12px;
+    --line-height: 15px;
+    --input-height: 30px;
+  }
+
+  .comment_wrap {
+    display: grid;
+    grid-template-columns: 40px auto;
+    gap: 20px;
+    background-color: yellow;
+
+    .img_box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background-color: var(--grey-30);
+
+      img {
+        border-radius: 50%;
+      }
+
+      &.img_default {
+        background-color: var(--grey-30);
+      }
+    }
+  }
+
+  .button_wrap {
+    display: flex;
+    align-items: flex-end;
+  }
+}

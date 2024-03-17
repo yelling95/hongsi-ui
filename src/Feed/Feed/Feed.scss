@@ -28,6 +28,10 @@
       img {
         border-radius: 50%;
       }
+
+      &.img_default {
+        background-color: var(--grey-30);
+      }
     }
 
     .user_wrap {

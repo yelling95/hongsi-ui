@@ -1,5 +1,5 @@
 import React, {CSSProperties, ReactElement} from 'react'
-import classname from 'classnames'
+import classnames from 'classnames'
 import {map} from 'lodash-es'
 import {Button} from '../../Button'
 
@@ -84,7 +84,7 @@ export default function Confirm({
 
   const renderButtonWrap = () => {
     return (
-      <div className={classname('buttons_wrap')}>
+      <div className={classnames('buttons_wrap')}>
         {map(buttonList, (button, buttonIdx) => (
           <Button key={`modal-button-${buttonIdx}`} type={button.type} onClick={button.click}>
             {button.label}
@@ -95,7 +95,7 @@ export default function Confirm({
   }
 
   return (
-    <div className={classname('confirm_container', isShow && 'open')} style={csStyle}>
+    <div className={classnames('confirm_container', isShow && 'open')} style={csStyle}>
       <div className="contents">{children}</div>
       {renderButtonWrap()}
     </div>
