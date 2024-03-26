@@ -33,9 +33,9 @@ export default function Comment({
           )}
         </div>
         <TextArea value={value} onChange={onChange} />
-      </div>
-      <div className="button_wrap">
-        <TextButton>등록</TextButton>
+        <div className="button_wrap">
+          <TextButton>등록</TextButton>
+        </div>
       </div>
     </div>
   )

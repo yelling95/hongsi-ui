@@ -40,6 +40,7 @@ export default function TextArea({
   const csStyle: CSSProperties = style || {}
 
   const defaultHeight = 28
+  const maxHeight = 280
 
   const [isFocus, setIsFocus] = React.useState<boolean>(false)
   const [height, setHeight] = React.useState<number>(defaultHeight)
@@ -50,7 +51,9 @@ export default function TextArea({
 
   const handleHeight = () => {
     const beHeight = textareaVirtualRef.current?.scrollHeight
-    setHeight(beHeight ? beHeight : defaultHeight)
+    if (beHeight && beHeight <= maxHeight) {
+      setHeight(beHeight)
+    }
   }
 
   React.useEffect(() => {
