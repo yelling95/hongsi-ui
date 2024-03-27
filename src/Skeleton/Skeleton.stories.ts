@@ -1,7 +1,7 @@
 import type {Meta, StoryObj} from '@storybook/react'
 import Skeleton from './Skeleton'
 
-const meta = {
+const meta: Meta<typeof Skeleton> = {
   title: 'Skeleton',
   component: Skeleton,
   parameters: {
@@ -9,7 +9,7 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof Skeleton>
+}
 
 export default meta
 

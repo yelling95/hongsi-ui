@@ -2,7 +2,7 @@ import type {StoryObj, Meta} from '@storybook/react'
 
 import SortHeader from './SortHeader'
 
-const meta = {
+const meta: Meta<typeof SortHeader> = {
   title: 'Header/SortHeader',
   component: SortHeader,
   parameters: {
@@ -10,7 +10,7 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof SortHeader>
+}
 
 export default meta
 type Story = StoryObj<typeof SortHeader>

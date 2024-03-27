@@ -2,7 +2,7 @@ import type {Meta, StoryObj} from '@storybook/react'
 
 import Sheet from './Sheet'
 
-const meta = {
+const meta: Meta<typeof Sheet> = {
   title: 'Sheet',
   component: Sheet,
   parameters: {
@@ -10,7 +10,7 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof Sheet>
+}
 
 export default meta
 

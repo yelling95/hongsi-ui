@@ -2,7 +2,7 @@ import type {Meta, StoryObj} from '@storybook/react'
 
 import Snackbar from './Snackbar'
 
-const meta = {
+const meta: Meta<typeof Snackbar> = {
   title: 'Snackbar',
   component: Snackbar,
   parameters: {
@@ -10,7 +10,7 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof Snackbar>
+}
 
 export default meta
 

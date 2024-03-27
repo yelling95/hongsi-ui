@@ -2,7 +2,7 @@ import type {Meta, StoryObj} from '@storybook/react'
 
 import HomeHeader from './HomeHeader'
 
-const meta = {
+const meta: Meta<typeof HomeHeader> = {
   title: 'Header/HomeHeader',
   component: HomeHeader,
   parameters: {
@@ -10,7 +10,7 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof HomeHeader>
+}
 
 export default meta
 

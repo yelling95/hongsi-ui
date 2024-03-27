@@ -2,7 +2,7 @@ import type {Meta, StoryObj} from '@storybook/react'
 
 import Tag from './Tag'
 
-const meta = {
+const meta: Meta<typeof Tag> = {
   title: 'Tag',
   component: Tag,
   parameters: {
@@ -10,7 +10,7 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof Tag>
+}
 
 export default meta
 

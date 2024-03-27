@@ -2,7 +2,7 @@ import type {Meta, StoryObj} from '@storybook/react'
 
 import Feed from './Feed'
 
-const meta = {
+const meta: Meta<typeof Feed> = {
   title: 'Feed/Feed',
   component: Feed,
   parameters: {
@@ -10,7 +10,7 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof Feed>
+}
 
 export default meta
 

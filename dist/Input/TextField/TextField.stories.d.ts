@@ -1,0 +1,24 @@
+import type { StoryObj } from '@storybook/react';
+import TextField from './TextField';
+declare const meta: {
+    title: string;
+    parameters: {};
+    tags: string[];
+    argTypes: {};
+    component: typeof TextField;
+};
+export default meta;
+type Story = StoryObj<typeof TextField>;
+export declare const Default: Story;
+export declare const Large: Story;
+export declare const Medium: Story;
+export declare const Small: Story;
+export declare const Search: Story;
+export declare const NumberWithComma: Story;
+export declare const OnlyNumber: Story;
+export declare const Decimal: Story;
+export declare const Phone: Story;
+export declare const Disabled: Story;
+export declare const Error: Story;
+export declare const ValueIsRequired: Story;
+export declare const RegExp: Story;

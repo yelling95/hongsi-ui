@@ -2,7 +2,7 @@ import type {StoryObj, Meta} from '@storybook/react'
 
 import ReadHeader from './ReadHeader'
 
-const meta = {
+const meta: Meta<typeof ReadHeader> = {
   title: 'Header/ReadHeader',
   component: ReadHeader,
   parameters: {
@@ -10,7 +10,7 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof ReadHeader>
+}
 
 export default meta
 type Story = StoryObj<typeof ReadHeader>

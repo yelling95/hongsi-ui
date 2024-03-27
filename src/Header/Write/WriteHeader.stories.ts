@@ -3,7 +3,7 @@ import {range} from 'lodash-es'
 
 import WriteHeader from './WriteHeader'
 
-const meta = {
+const meta: Meta<typeof WriteHeader> = {
   title: 'Header/WriteHeader',
   component: WriteHeader,
   parameters: {
@@ -11,7 +11,7 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof WriteHeader>
+}
 
 export default meta
 type Story = StoryObj<typeof WriteHeader>

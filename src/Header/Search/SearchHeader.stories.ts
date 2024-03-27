@@ -2,7 +2,7 @@ import type {StoryObj, Meta} from '@storybook/react'
 
 import SearchHeader from './SearchHeader'
 
-const meta = {
+const meta: Meta<typeof SearchHeader> = {
   title: 'Header/SearchHeader',
   component: SearchHeader,
   parameters: {
@@ -10,7 +10,7 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof SearchHeader>
+}
 
 export default meta
 type Story = StoryObj<typeof SearchHeader>

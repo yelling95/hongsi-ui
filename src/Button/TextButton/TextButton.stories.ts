@@ -2,7 +2,7 @@ import type {Meta, StoryObj} from '@storybook/react'
 
 import TextButton from './TextButton'
 
-const meta = {
+const meta: Meta<typeof TextButton> = {
   title: 'Button/TextButton',
   component: TextButton,
   parameters: {
@@ -10,7 +10,7 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof TextButton>
+}
 
 export default meta
 

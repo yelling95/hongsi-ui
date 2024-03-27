@@ -2,7 +2,7 @@ import type {Meta, StoryObj} from '@storybook/react'
 
 import Footer from './Footer'
 
-const meta = {
+const meta: Meta<typeof Footer> = {
   title: 'Footer',
   component: Footer,
   parameters: {
@@ -10,7 +10,7 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof Footer>
+}
 
 export default meta
 

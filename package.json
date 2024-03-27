@@ -8,6 +8,7 @@
     "dist/**.*"
   ],
   "license": "MIT",
+  "keywords": [],
   "author": "Veronica <yelling95@daum.net>",
   "type": "module",
   "scripts": {
@@ -23,6 +24,7 @@
     "@babel/preset-typescript": "^7.23.0",
     "@rollup/plugin-babel": "^6.0.2",
     "@rollup/plugin-commonjs": "^23.0.3",
+    "@rollup/plugin-image": "^3.0.3",
     "@rollup/plugin-json": "^5.0.2",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^9.0.2",

@@ -2,7 +2,7 @@ import type {StoryObj, Meta} from '@storybook/react'
 
 import ChattingHeader from './ChattingHeader'
 
-const meta = {
+const meta: Meta<typeof ChattingHeader> = {
   title: 'Header/ChattingHeader',
   component: ChattingHeader,
   parameters: {
@@ -10,7 +10,7 @@ const meta = {
   },
   tags: ['autodocs'],
   argTypes: {},
-} satisfies Meta<typeof ChattingHeader>
+}
 
 export default meta
 type Story = StoryObj<typeof ChattingHeader>
