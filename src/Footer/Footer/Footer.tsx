@@ -1,6 +1,6 @@
 import React, {CSSProperties} from 'react'
 import classnames from 'classnames'
-import {Icon} from '../Icon'
+import {Icon} from '../../Icon'
 import {map} from 'lodash-es'
 
 import './Footer.scss'

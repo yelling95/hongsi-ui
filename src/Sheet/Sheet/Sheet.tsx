@@ -1,6 +1,6 @@
 import React, {CSSProperties} from 'react'
 import parser from 'html-react-parser'
-import {Icon} from '../Icon'
+import {Icon} from '../../Icon'
 
 import './Sheet.scss'
 

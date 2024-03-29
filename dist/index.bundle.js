@@ -19333,7 +19333,7 @@ function Dropdown(_a) {
   })));
 }
 
-var css_248z$a = ".home_header_container{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;align-items:center;display:flex;font-family:SF Pro Display,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Emoji,sans-serif;font-style:normal;height:47px;justify-content:space-between;min-width:375px;width:100%}.home_header_container .logo_wrap{cursor:pointer}.home_header_container .buttons_wrap{display:flex;gap:24px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkhvbWVIZWFkZXIuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSx1QkFHRSxrQ0FBbUMsQ0FDbkMsaUNBQWtDLENBR2xDLGtCQUFtQixDQUZuQixZQUFhLENBSmIsME5BQTZQLENBQzdQLGlCQUFrQixDQVFsQixXQUFZLENBSlosNkJBQThCLENBRzlCLGVBQWdCLENBRGhCLFVBR0YsQ0FDQSxrQ0FDRSxjQUNGLENBQ0EscUNBQ0UsWUFBYSxDQUNiLFFBQ0YiLCJmaWxlIjoiSG9tZUhlYWRlci5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmhvbWVfaGVhZGVyX2NvbnRhaW5lciB7XG4gIGZvbnQtZmFtaWx5OiBcIlNGIFBybyBEaXNwbGF5XCIsIC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgc3lzdGVtLXVpLCBSb2JvdG8sIFwiSGVsdmV0aWNhIE5ldWVcIiwgXCJTZWdvZSBVSVwiLCBcIkFwcGxlIFNEIEdvdGhpYyBOZW9cIiwgXCJOb3RvIFNhbnMgS1JcIiwgXCJNYWxndW4gR290aGljXCIsIFwiQXBwbGUgQ29sb3IgRW1vamlcIiwgXCJTZWdvZSBVSSBFbW9qaVwiLCBcIlNlZ29lIFVJIFN5bWJvbFwiLCBcIk5vdG8gRW1vamlcIiwgc2Fucy1zZXJpZjtcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbiAgZGlzcGxheTogZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICB3aWR0aDogMTAwJTtcbiAgbWluLXdpZHRoOiAzNzVweDtcbiAgaGVpZ2h0OiA0N3B4O1xufVxuLmhvbWVfaGVhZGVyX2NvbnRhaW5lciAubG9nb193cmFwIHtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuLmhvbWVfaGVhZGVyX2NvbnRhaW5lciAuYnV0dG9uc193cmFwIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZ2FwOiAyNHB4O1xufSJdfQ== */";
+var css_248z$a = ".home_header_container{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;align-items:center;display:flex;font-family:SF Pro Display,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Emoji,sans-serif;font-style:normal;height:47px;justify-content:space-between;min-width:375px;padding:0 20px;width:100%}.home_header_container .logo_wrap{cursor:pointer}.home_header_container .buttons_wrap{display:flex;gap:24px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkhvbWVIZWFkZXIuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSx1QkFHRSxrQ0FBbUMsQ0FDbkMsaUNBQWtDLENBR2xDLGtCQUFtQixDQUZuQixZQUFhLENBSmIsME5BQTZQLENBQzdQLGlCQUFrQixDQVFsQixXQUFZLENBSlosNkJBQThCLENBRzlCLGVBQWdCLENBRWhCLGNBQWUsQ0FIZixVQUlGLENBQ0Esa0NBQ0UsY0FDRixDQUNBLHFDQUNFLFlBQWEsQ0FDYixRQUNGIiwiZmlsZSI6IkhvbWVIZWFkZXIuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5ob21lX2hlYWRlcl9jb250YWluZXIge1xuICBmb250LWZhbWlseTogXCJTRiBQcm8gRGlzcGxheVwiLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsIHN5c3RlbS11aSwgUm9ib3RvLCBcIkhlbHZldGljYSBOZXVlXCIsIFwiU2Vnb2UgVUlcIiwgXCJBcHBsZSBTRCBHb3RoaWMgTmVvXCIsIFwiTm90byBTYW5zIEtSXCIsIFwiTWFsZ3VuIEdvdGhpY1wiLCBcIkFwcGxlIENvbG9yIEVtb2ppXCIsIFwiU2Vnb2UgVUkgRW1vamlcIiwgXCJTZWdvZSBVSSBTeW1ib2xcIiwgXCJOb3RvIEVtb2ppXCIsIHNhbnMtc2VyaWY7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgd2lkdGg6IDEwMCU7XG4gIG1pbi13aWR0aDogMzc1cHg7XG4gIGhlaWdodDogNDdweDtcbiAgcGFkZGluZzogMCAyMHB4O1xufVxuLmhvbWVfaGVhZGVyX2NvbnRhaW5lciAubG9nb193cmFwIHtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuLmhvbWVfaGVhZGVyX2NvbnRhaW5lciAuYnV0dG9uc193cmFwIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZ2FwOiAyNHB4O1xufSJdfQ== */";
 styleInject(css_248z$a);
 
 var img = "data:image/svg+xml,%3csvg width='45' height='24' viewBox='0 0 45 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M6.86063 11.6428C6.86063 11.4467 6.86063 11.274 6.88565 11.1028C2.61564 10.6359 1.28351 9.38305 1.28351 7.76136C1.28351 6.80267 1.65407 5.99339 2.81421 5.37864C1.65407 5.0845 1.08651 4.5678 1.08651 3.65891C1.08651 2.52902 1.97459 1.96407 3.25825 1.89093C4.7139 1.81778 5.94753 2.16173 7.0592 2.82472C6.36812 2.38272 6.07261 1.96563 6.1461 1.35089C6.29307 0.122949 8.11927 0 11.0806 0C14.0419 0 15.8431 0.0980481 15.9917 1.35089C16.0417 1.94073 15.7446 2.35782 15.0285 2.82472C16.1386 2.16173 17.4473 1.81778 18.903 1.89093C20.1366 1.98898 21.0247 2.43097 21.0247 3.53751C21.0247 4.4464 20.4571 5.01135 19.2719 5.33039C20.4571 5.94514 20.8511 6.77933 20.8511 7.76292C20.8511 9.3846 19.494 10.6374 15.1989 11.1043C15.224 11.2755 15.224 11.4483 15.224 11.6444V11.8654C16.8031 11.8156 18.3573 11.7424 19.8145 11.6693C21.2467 11.5712 22.1098 12.3074 22.1098 13.2661C22.1098 14.396 21.2467 14.9609 19.7895 15.0589C14.3359 15.4527 7.54858 15.4527 2.26854 15.0589C0.86136 14.936 -0.00170898 14.396 -0.00170898 13.2661C-0.00170898 12.3074 0.86136 11.5712 2.26854 11.6693C3.69917 11.7673 5.25488 11.8171 6.85907 11.8654V11.6444L6.86063 11.6428ZM11.0556 15.7935C17.3238 15.7935 21.1247 16.6526 21.1247 19.896C21.1247 23.1394 17.3238 23.9984 11.0556 23.9984C4.78739 23.9984 0.96299 23.0413 0.96299 19.8975C0.96299 16.7538 4.76393 15.7951 11.0556 15.7951V15.7935ZM12.6598 7.29447C13.1773 7.36761 13.2523 6.65638 12.8568 6.58167C11.6231 6.31087 10.7351 5.91868 9.79694 5.25569C9.50144 5.00979 8.95733 5.54983 9.37792 5.89378C10.291 6.60657 11.4762 7.07347 12.6598 7.29447ZM10.513 21.7636C11.4762 21.0025 12.0187 19.7497 12.3893 18.57C12.5863 18.03 11.8717 17.8821 11.7232 18.2759C11.3527 19.3808 10.8351 20.3146 9.92202 21.2484C9.64997 21.5192 10.094 22.0593 10.5146 21.7636H10.513Z' fill='%23393939'/%3e%3cpath d='M27.3914 22.8452C24.9977 22.8452 23.492 21.1504 23.3935 16.8767C23.295 13.07 23.8125 11.1526 25.2697 9.8515C26.5534 8.72161 27.343 7.71467 27.343 5.4549C27.343 2.87608 28.2811 1.91739 30.6248 1.91739C32.7231 1.91739 33.7832 2.87608 33.7832 5.35685C33.7832 7.42053 35.0418 8.55042 36.3255 9.8764C37.2886 10.8833 38.0031 12.6031 37.8311 17.1226C37.6592 22.0608 36.8195 22.9448 35.0434 22.9448C32.6981 22.9448 31.9085 22.1589 31.9085 17.0993C31.9085 14.1516 31.6364 12.3089 30.6248 10.6639C30.2793 10.1721 29.5147 10.516 29.9588 11.179C30.7483 12.3821 31.0939 14.1516 31.0939 17.4681C31.0939 22.0624 30.1808 22.8483 27.3914 22.8483V22.8452ZM41.4335 23.8039C39.4338 23.8039 38.1016 22.674 38.3487 20.4625C38.9663 15.1819 38.9663 9.87484 38.3737 4.81525C38.1016 2.38272 39.4353 1.22949 41.4335 1.22949C43.1862 1.22949 44.3948 2.21153 44.5919 4.22696C45.1344 9.53245 45.1344 15.5274 44.5919 20.8578C44.3948 22.8234 43.1847 23.8055 41.4335 23.8055V23.8039Z' fill='%23393939'/%3e%3c/svg%3e";
@@ -19850,7 +19850,7 @@ var SortHeader = function (_a) {
   }, "\uC804\uCCB4")));
 };
 
-var css_248z$1 = ".sheet_container{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;align-items:center;background-color:var(--white);border:1px solid #e2e2e2;display:flex;font-family:SF Pro Display,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Emoji,sans-serif;font-style:normal;justify-content:space-between;min-width:375px;padding:20px}.sheet_container .message_wrap{font-size:22px;font-weight:700;line-height:30px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlNoZWV0LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsaUJBR0Usa0NBQW1DLENBQ25DLGlDQUFrQyxDQUVsQyxrQkFBbUIsQ0FJbkIsNkJBQThCLENBQzlCLHdCQUF5QixDQU56QixZQUFhLENBSmIsME5BQTZQLENBQzdQLGlCQUFrQixDQUtsQiw2QkFBOEIsQ0FDOUIsZUFBZ0IsQ0FDaEIsWUFHRixDQUNBLCtCQUNFLGNBQWUsQ0FFZixlQUFnQixDQURoQixnQkFFRiIsImZpbGUiOiJTaGVldC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLnNoZWV0X2NvbnRhaW5lciB7XG4gIGZvbnQtZmFtaWx5OiBcIlNGIFBybyBEaXNwbGF5XCIsIC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgc3lzdGVtLXVpLCBSb2JvdG8sIFwiSGVsdmV0aWNhIE5ldWVcIiwgXCJTZWdvZSBVSVwiLCBcIkFwcGxlIFNEIEdvdGhpYyBOZW9cIiwgXCJOb3RvIFNhbnMgS1JcIiwgXCJNYWxndW4gR290aGljXCIsIFwiQXBwbGUgQ29sb3IgRW1vamlcIiwgXCJTZWdvZSBVSSBFbW9qaVwiLCBcIlNlZ29lIFVJIFN5bWJvbFwiLCBcIk5vdG8gRW1vamlcIiwgc2Fucy1zZXJpZjtcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICBtaW4td2lkdGg6IDM3NXB4O1xuICBwYWRkaW5nOiAyMHB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS13aGl0ZSk7XG4gIGJvcmRlcjogMXB4IHNvbGlkICNlMmUyZTI7XG59XG4uc2hlZXRfY29udGFpbmVyIC5tZXNzYWdlX3dyYXAge1xuICBmb250LXNpemU6IDIycHg7XG4gIGxpbmUtaGVpZ2h0OiAzMHB4O1xuICBmb250LXdlaWdodDogNzAwO1xufSJdfQ== */";
+var css_248z$1 = ".sheet_container{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;align-items:center;background-color:var(--white);display:flex;font-family:SF Pro Display,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Emoji,sans-serif;font-style:normal;justify-content:space-between;min-width:375px;padding:20px}.sheet_container .message_wrap{font-size:22px;font-weight:700;line-height:30px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlNoZWV0LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsaUJBR0Usa0NBQW1DLENBQ25DLGlDQUFrQyxDQUVsQyxrQkFBbUIsQ0FJbkIsNkJBQThCLENBTDlCLFlBQWEsQ0FKYiwwTkFBNlAsQ0FDN1AsaUJBQWtCLENBS2xCLDZCQUE4QixDQUM5QixlQUFnQixDQUNoQixZQUVGLENBQ0EsK0JBQ0UsY0FBZSxDQUVmLGVBQWdCLENBRGhCLGdCQUVGIiwiZmlsZSI6IlNoZWV0LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuc2hlZXRfY29udGFpbmVyIHtcbiAgZm9udC1mYW1pbHk6IFwiU0YgUHJvIERpc3BsYXlcIiwgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCBzeXN0ZW0tdWksIFJvYm90bywgXCJIZWx2ZXRpY2EgTmV1ZVwiLCBcIlNlZ29lIFVJXCIsIFwiQXBwbGUgU0QgR290aGljIE5lb1wiLCBcIk5vdG8gU2FucyBLUlwiLCBcIk1hbGd1biBHb3RoaWNcIiwgXCJBcHBsZSBDb2xvciBFbW9qaVwiLCBcIlNlZ29lIFVJIEVtb2ppXCIsIFwiU2Vnb2UgVUkgU3ltYm9sXCIsIFwiTm90byBFbW9qaVwiLCBzYW5zLXNlcmlmO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xuICAtbW96LW9zeC1mb250LXNtb290aGluZzogZ3JheXNjYWxlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIG1pbi13aWR0aDogMzc1cHg7XG4gIHBhZGRpbmc6IDIwcHg7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLXdoaXRlKTtcbn1cbi5zaGVldF9jb250YWluZXIgLm1lc3NhZ2Vfd3JhcCB7XG4gIGZvbnQtc2l6ZTogMjJweDtcbiAgbGluZS1oZWlnaHQ6IDMwcHg7XG4gIGZvbnQtd2VpZ2h0OiA3MDA7XG59Il19 */";
 styleInject(css_248z$1);
 
 var Sheet = function (_a) {
@@ -19906,46 +19906,7 @@ var Skeleton = function (_a) {
     viewBox: viewBox,
     backgroundColor: "#e9e9e9",
     foregroundColor: "#efefef"
-  }, props.children ? props.children : ( /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("circle", {
-    cx: "51",
-    cy: "48",
-    r: "43"
-  }), /*#__PURE__*/React.createElement("rect", {
-    x: "119",
-    y: "27",
-    rx: "0",
-    ry: "0",
-    width: "99",
-    height: "9"
-  }), /*#__PURE__*/React.createElement("rect", {
-    x: "116",
-    y: "48",
-    rx: "0",
-    ry: "0",
-    width: "104",
-    height: "10"
-  }), /*#__PURE__*/React.createElement("rect", {
-    x: "14",
-    y: "104",
-    rx: "0",
-    ry: "0",
-    width: "281",
-    height: "41"
-  }), /*#__PURE__*/React.createElement("rect", {
-    x: "14",
-    y: "156",
-    rx: "0",
-    ry: "0",
-    width: "321",
-    height: "64"
-  }), /*#__PURE__*/React.createElement("rect", {
-    x: "13",
-    y: "235",
-    rx: "5",
-    ry: "5",
-    width: "348",
-    height: "303"
-  }))));
+  }, props.children && props.children);
 };
 
 export { BasicItem as BasicListItem, Button, ChattingHeader, Chatting as ChattingListItem, Comment, Confirm, Dropdown, Gather as GatherListItem, HomeHeader, Icon, IconButton, ReadHeader, SearchHeader, Sheet, Skeleton, Snackbar, SortHeader, Tab, Tag, TextArea, TextButton, TextField, WriteHeader };
