@@ -8,7 +8,7 @@ import {map} from 'lodash-es'
 import './Slick.scss'
 import './Feed.scss'
 
-interface Image {
+type Image = {
   url: string
   desc: string
 }
@@ -42,7 +42,7 @@ const Feed = ({
   username = '홍길동',
   category = '주제',
   timing = '3분 전',
-  imgList = [],
+  imgList,
   title = '타이틀을 적어주세요.',
   subtitle = '서브타이틀은 두 줄이 최대로 적어주시면 됩니다. 서브타이틀은 두 줄이 최대로 적어주세요.',
   likeCnt = 0,
