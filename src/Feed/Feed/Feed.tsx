@@ -1,55 +1,35 @@
 import React from 'react'
 import classnames from 'classnames'
-import Slider from 'react-slick'
 import {Icon} from '../../Icon'
 import {GatherListItem as Gather} from '../../List'
 
-import './Slick.scss'
 import './Feed.scss'
 
-interface sliderOpt {
-  dots: boolean
-  infinite: boolean
-  speed: number
-  slidesToShow: number
-  slidesToScroll: number
-  arrows: boolean
-}
-
-interface FeedProps {
-  profileUrl: string
-  username: string
-  category: string
-  timing: string
-  title: string
-  subtitle: string
-  likeCnt: number
-  chatCnt: number
-  sliderOpt: sliderOpt
-  gather: boolean
-  declare: boolean
-  children: any
+type FeedProps = {
+  profileUrl?: string
+  username?: string
+  category?: string
+  timing?: string
+  title?: string
+  subtitle?: string
+  likeCnt?: number
+  chatCnt?: number
+  gather?: boolean
+  declare?: boolean
+  children?: any
 }
 
 export default function Feed({
-  profileUrl = '',
-  username = '홍길동',
-  category = '주제',
-  timing = '3분 전',
-  title = '타이틀을 적어주세요.',
-  subtitle = '서브타이틀은 두 줄이 최대로 적어주시면 됩니다. 서브타이틀은 두 줄이 최대로 적어주세요.',
-  likeCnt = 0,
-  chatCnt = 0,
-  sliderOpt = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-  },
-  gather = false,
-  declare = false,
+  profileUrl,
+  username,
+  category,
+  timing,
+  title,
+  subtitle,
+  likeCnt,
+  chatCnt,
+  gather,
+  declare,
   children,
   ...props
 }: FeedProps) {
@@ -97,9 +77,7 @@ export default function Feed({
       <div className={classnames('body_wrap', isHideContents && 'hide')}>
         <div className="title">{title}</div>
         <SubTitle subtitle={subtitle} />
-        <div className="slider_wrap" style={{height: 540}}>
-          <Slider {...sliderOpt}>{children}</Slider>
-        </div>
+        {children}
       </div>
       <div className={classnames('gather_wrap', isHideContents && 'hide')}>
         {gather && <Gather size="md" />}
@@ -142,14 +120,6 @@ Feed.defaultProps = {
     '서브타이틀은 두 줄이 최대로 적어주시면 됩니다. 서브타이틀은 두 줄이 최대로 적어주세요.',
   likeCnt: 0,
   chatCnt: 0,
-  sliderOpt: {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-  },
   gather: false,
   declare: false,
 }
