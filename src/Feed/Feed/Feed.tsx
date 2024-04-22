@@ -1,9 +1,8 @@
-import React, {CSSProperties} from 'react'
+import React from 'react'
 import classnames from 'classnames'
 import Slider from 'react-slick'
 import {Icon} from '../../Icon'
 import {GatherListItem as Gather} from '../../List'
-import {map} from 'lodash-es'
 
 import './Slick.scss'
 import './Feed.scss'
@@ -22,10 +21,6 @@ interface FeedProps {
   username: string
   category: string
   timing: string
-  imgList: Array<{
-    url: string
-    desc: string
-  }>
   title: string
   subtitle: string
   likeCnt: number
@@ -33,14 +28,14 @@ interface FeedProps {
   sliderOpt: sliderOpt
   gather: boolean
   declare: boolean
+  children: any
 }
 
-const Feed = ({
+export default function Feed({
   profileUrl = '',
   username = '홍길동',
   category = '주제',
   timing = '3분 전',
-  imgList = [],
   title = '타이틀을 적어주세요.',
   subtitle = '서브타이틀은 두 줄이 최대로 적어주시면 됩니다. 서브타이틀은 두 줄이 최대로 적어주세요.',
   likeCnt = 0,
@@ -55,8 +50,9 @@ const Feed = ({
   },
   gather = false,
   declare = false,
+  children,
   ...props
-}: FeedProps & React.HTMLAttributes<HTMLButtonElement>) => {
+}: FeedProps) {
   const [isHideContents, setHideContents] = React.useState(false)
 
   React.useEffect(() => {
@@ -101,19 +97,9 @@ const Feed = ({
       <div className={classnames('body_wrap', isHideContents && 'hide')}>
         <div className="title">{title}</div>
         <SubTitle subtitle={subtitle} />
-        {imgList && imgList.length > 0 && (
-          <div className="slider_wrap" style={{height: 540}}>
-            <Slider {...sliderOpt}>
-              {map(imgList, (img, index) => {
-                return (
-                  <div key={`slider-img-${index}`} className="img_wrap">
-                    <div style={{height: 540, backgroundImage: `url('${img.url}')`}}></div>
-                  </div>
-                )
-              })}
-            </Slider>
-          </div>
-        )}
+        <div className="slider_wrap" style={{height: 540}}>
+          <Slider {...sliderOpt}>{children}</Slider>
+        </div>
       </div>
       <div className={classnames('gather_wrap', isHideContents && 'hide')}>
         {gather && <Gather size="md" />}
@@ -146,4 +132,24 @@ const SubTitle = ({subtitle = ''}) => {
   )
 }
 
-export default Feed
+Feed.defaultProps = {
+  profileUrl: '',
+  username: '홍길동',
+  category: '주제',
+  timing: '3분 전',
+  title: '타이틀을 적어주세요.',
+  subtitle:
+    '서브타이틀은 두 줄이 최대로 적어주시면 됩니다. 서브타이틀은 두 줄이 최대로 적어주세요.',
+  likeCnt: 0,
+  chatCnt: 0,
+  sliderOpt: {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  },
+  gather: false,
+  declare: false,
+}

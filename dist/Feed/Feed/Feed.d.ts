@@ -1,10 +1,6 @@
 import React from 'react';
 import './Slick.scss';
 import './Feed.scss';
-type Image = {
-    url: string;
-    desc: string;
-};
 interface sliderOpt {
     dots: boolean;
     infinite: boolean;
@@ -18,7 +14,6 @@ interface FeedProps {
     username: string;
     category: string;
     timing: string;
-    imgList: Array<Image>;
     title: string;
     subtitle: string;
     likeCnt: number;
@@ -26,6 +21,29 @@ interface FeedProps {
     sliderOpt: sliderOpt;
     gather: boolean;
     declare: boolean;
+    children: any;
 }
-declare const Feed: ({ profileUrl, username, category, timing, imgList, title, subtitle, likeCnt, chatCnt, sliderOpt, gather, declare, ...props }: FeedProps & React.HTMLAttributes<HTMLButtonElement>) => React.JSX.Element;
+declare function Feed({ profileUrl, username, category, timing, title, subtitle, likeCnt, chatCnt, sliderOpt, gather, declare, children, ...props }: FeedProps): React.JSX.Element;
+declare namespace Feed {
+    var defaultProps: {
+        profileUrl: string;
+        username: string;
+        category: string;
+        timing: string;
+        title: string;
+        subtitle: string;
+        likeCnt: number;
+        chatCnt: number;
+        sliderOpt: {
+            dots: boolean;
+            infinite: boolean;
+            speed: number;
+            slidesToShow: number;
+            slidesToScroll: number;
+            arrows: boolean;
+        };
+        gather: boolean;
+        declare: boolean;
+    };
+}
 export default Feed;
