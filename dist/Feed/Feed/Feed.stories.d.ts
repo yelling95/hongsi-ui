@@ -1,5 +1,6 @@
 import type { StoryObj } from '@storybook/react';
 import Feed from './Feed';
+import './Slick.scss';
 declare const meta: {
     title: string;
     parameters: {

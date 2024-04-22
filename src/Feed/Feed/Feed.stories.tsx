@@ -1,7 +1,10 @@
 import React from 'react'
 import type {StoryObj} from '@storybook/react'
 import {map, range} from 'lodash-es'
+import Slider from 'react-slick'
+
 import Feed from './Feed'
+import './Slick.scss'
 
 const meta = {
   title: 'Feed/Feed',
@@ -20,13 +23,26 @@ const ImageRender = (args: any) => {
     desc: '사진 ' + n,
   }))
 
+  const SliderOpt = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+  }
+
   return (
     <Feed>
-      {map(sampleImageList, (img, index) => (
-        <div key={`slider-img-${index}`} className="img_wrap">
-          <div style={{height: 540, backgroundImage: `url('${img.url}')`}}></div>
-        </div>
-      ))}
+      <div className="slider_wrap" style={{height: 540}}>
+        <Slider {...SliderOpt}>
+          {map(sampleImageList, (img, index) => (
+            <div key={`slider-img-${index}`} className="img_wrap">
+              <div style={{height: 540, backgroundImage: `url('${img.url}')`}}></div>
+            </div>
+          ))}
+        </Slider>
+      </div>
     </Feed>
   )
 }

@@ -12,3 +12,4 @@ declare const meta: {
 export default meta;
 type Story = StoryObj<typeof Dropdown>;
 export declare const Default: Story;
+export declare const Double: Story;

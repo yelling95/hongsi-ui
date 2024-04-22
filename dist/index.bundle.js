@@ -19808,7 +19808,13 @@ var css_248z$5 = ".sort_header_container{-webkit-font-smoothing:antialiased;-moz
 styleInject(css_248z$5);
 
 var SortHeader = function (_a) {
-  __rest(_a, []);
+  var _b = _a.order,
+    order = _b === void 0 ? '최신순' : _b,
+    _c = _a.filter,
+    filter = _c === void 0 ? '전체' : _c,
+    onClickOrder = _a.onClickOrder,
+    onClickFilter = _a.onClickFilter;
+    __rest(_a, ["order", "filter", "onClickOrder", "onClickFilter"]);
   return /*#__PURE__*/React.createElement("div", {
     className: "sort_header_container"
   }, /*#__PURE__*/React.createElement("div", {
@@ -19818,16 +19824,18 @@ var SortHeader = function (_a) {
     size: "md",
     iconWidth: 20,
     iconHeight: 20,
-    color: "#ABABAB"
-  }, "\uCD5C\uC2E0\uC21C")), /*#__PURE__*/React.createElement("div", {
+    color: "#ABABAB",
+    onClick: onClickOrder
+  }, order)), /*#__PURE__*/React.createElement("div", {
     className: "filter_wrap"
   }, /*#__PURE__*/React.createElement(IconButton, {
     type: "Filter",
     size: "md",
     iconWidth: 13,
     iconHeight: 13,
-    color: "#ABABAB"
-  }, "\uC804\uCCB4")));
+    color: "#ABABAB",
+    onClick: onClickFilter
+  }, filter)));
 };
 
 var css_248z$4 = ".confirm_container{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;--max-width:330px;background-color:var(--white);border-radius:12px;display:none;flex-direction:column;font-family:SF Pro Display,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Emoji,sans-serif;font-size:18px;font-style:normal;font-weight:700;gap:20px;justify-content:center;left:50%;line-height:25px;max-width:var(--max-width);padding:20px;position:fixed;text-align:center;top:50%;transform:translate(-50%,-50%);width:88%;z-index:9999}.confirm_container.open{display:flex}.confirm_container .buttons_wrap{display:flex;flex-direction:column;gap:8px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbmZpcm0uc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxtQkFHRSxrQ0FBbUMsQ0FDbkMsaUNBQWtDLENBQ2xDLGlCQUFrQixDQVdsQiw2QkFBOEIsQ0FLOUIsa0JBQW1CLENBZm5CLFlBQWEsQ0FHYixxQkFBc0IsQ0FSdEIsME5BQTZQLENBaUI3UCxjQUFlLENBaEJmLGlCQUFrQixDQWVsQixlQUFnQixDQU1oQixRQUFTLENBZlQsc0JBQXVCLENBSXZCLFFBQVMsQ0FPVCxnQkFBaUIsQ0FKakIsMEJBQTJCLENBTzNCLFlBQWEsQ0FmYixjQUFlLENBYWYsaUJBQWtCLENBVGxCLE9BQVEsQ0FFUiw4QkFBZ0MsQ0FDaEMsU0FBVSxDQUpWLFlBY0YsQ0FDQSx3QkFDRSxZQUNGLENBQ0EsaUNBQ0UsWUFBYSxDQUNiLHFCQUFzQixDQUN0QixPQUNGIiwiZmlsZSI6IkNvbmZpcm0uc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jb25maXJtX2NvbnRhaW5lciB7XG4gIGZvbnQtZmFtaWx5OiBcIlNGIFBybyBEaXNwbGF5XCIsIC1hcHBsZS1zeXN0ZW0sIEJsaW5rTWFjU3lzdGVtRm9udCwgc3lzdGVtLXVpLCBSb2JvdG8sIFwiSGVsdmV0aWNhIE5ldWVcIiwgXCJTZWdvZSBVSVwiLCBcIkFwcGxlIFNEIEdvdGhpYyBOZW9cIiwgXCJOb3RvIFNhbnMgS1JcIiwgXCJNYWxndW4gR290aGljXCIsIFwiQXBwbGUgQ29sb3IgRW1vamlcIiwgXCJTZWdvZSBVSSBFbW9qaVwiLCBcIlNlZ29lIFVJIFN5bWJvbFwiLCBcIk5vdG8gRW1vamlcIiwgc2Fucy1zZXJpZjtcbiAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAtd2Via2l0LWZvbnQtc21vb3RoaW5nOiBhbnRpYWxpYXNlZDtcbiAgLW1vei1vc3gtZm9udC1zbW9vdGhpbmc6IGdyYXlzY2FsZTtcbiAgLS1tYXgtd2lkdGg6IDMzMHB4O1xuICBkaXNwbGF5OiBub25lO1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICB6LWluZGV4OiA5OTk5O1xuICB0b3A6IDUwJTtcbiAgbGVmdDogNTAlO1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgd2lkdGg6IDg4JTtcbiAgbWF4LXdpZHRoOiB2YXIoLS1tYXgtd2lkdGgpO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS13aGl0ZSk7XG4gIGZvbnQtd2VpZ2h0OiA3MDA7XG4gIGZvbnQtc2l6ZTogMThweDtcbiAgbGluZS1oZWlnaHQ6IDI1cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgYm9yZGVyLXJhZGl1czogMTJweDtcbiAgcGFkZGluZzogMjBweDtcbiAgZ2FwOiAyMHB4O1xufVxuLmNvbmZpcm1fY29udGFpbmVyLm9wZW4ge1xuICBkaXNwbGF5OiBmbGV4O1xufVxuLmNvbmZpcm1fY29udGFpbmVyIC5idXR0b25zX3dyYXAge1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICBnYXA6IDhweDtcbn0iXX0= */";
@@ -19913,7 +19921,8 @@ var css_248z$3 = ".dropdown_container{-webkit-font-smoothing:antialiased;-moz-os
 styleInject(css_248z$3);
 
 function Dropdown(_a) {
-  var _b = _a.isShow,
+  var id = _a.id,
+    _b = _a.isShow,
     isShow = _b === void 0 ? false : _b,
     _c = _a.isShowDimm,
     isShowDimm = _c === void 0 ? false : _c,
@@ -19927,12 +19936,13 @@ function Dropdown(_a) {
   var csStyle = style || {};
   React.useEffect(function () {
     if (isShowDimm) {
-      var dimmElement = document.getElementById('modalDimm');
+      var dimmId = id ? "modalDimm-".concat(id) : 'modalDimm';
+      var dimmElement = document.getElementById(dimmId);
       var layer = (dimmElement === null || dimmElement === void 0 ? void 0 : dimmElement.dataset.layer) || -1;
       if (isShow) {
         if (!dimmElement) {
           var dimm = document.createElement('div');
-          dimm.id = 'modalDimm';
+          dimm.id = dimmId;
           dimm.classList.add('dimm');
           dimm.style.backgroundColor = 'var(--dimm-layer)';
           dimm.style.cursor = 'pointer';

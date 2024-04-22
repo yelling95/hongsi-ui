@@ -6,6 +6,7 @@ interface Option {
     click: () => void;
 }
 type DropdownProps = {
+    id?: string;
     isShow?: boolean;
     isShowDimm?: boolean;
     selected?: string;
@@ -13,5 +14,5 @@ type DropdownProps = {
     style?: CSSProperties;
     close?: () => void;
 };
-export default function Dropdown({ isShow, isShowDimm, selected, options, style, close, }: DropdownProps): React.JSX.Element;
+export default function Dropdown({ id, isShow, isShowDimm, selected, options, style, close, }: DropdownProps): React.JSX.Element;
 export {};

@@ -11,6 +11,7 @@ interface Option {
 }
 
 type DropdownProps = {
+  id?: string
   isShow?: boolean
   isShowDimm?: boolean
   selected?: string
@@ -20,6 +21,7 @@ type DropdownProps = {
 }
 
 export default function Dropdown({
+  id,
   isShow = false,
   isShowDimm = false,
   selected = '01',
@@ -31,13 +33,14 @@ export default function Dropdown({
 
   React.useEffect(() => {
     if (isShowDimm) {
-      const dimmElement = document.getElementById('modalDimm')
+      const dimmId = id ? `modalDimm-${id}` : 'modalDimm'
+      const dimmElement = document.getElementById(dimmId)
       const layer = dimmElement?.dataset.layer || -1
 
       if (isShow) {
         if (!dimmElement) {
           const dimm = document.createElement('div')
-          dimm.id = 'modalDimm'
+          dimm.id = dimmId
           dimm.classList.add('dimm')
           dimm.style.backgroundColor = 'var(--dimm-layer)'
           dimm.style.cursor = 'pointer'
