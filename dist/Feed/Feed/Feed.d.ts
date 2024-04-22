@@ -1,10 +1,10 @@
 import React from 'react';
 import './Slick.scss';
 import './Feed.scss';
-interface Image {
+type Image = {
     url: string;
     desc: string;
-}
+};
 interface sliderOpt {
     dots: boolean;
     infinite: boolean;

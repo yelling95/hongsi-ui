@@ -19177,33 +19177,32 @@ var Feed = function (_a) {
     category = _d === void 0 ? '주제' : _d,
     _e = _a.timing,
     timing = _e === void 0 ? '3분 전' : _e,
-    _f = _a.imgList,
-    imgList = _f === void 0 ? [] : _f,
-    _g = _a.title,
-    title = _g === void 0 ? '타이틀을 적어주세요.' : _g,
-    _h = _a.subtitle,
-    subtitle = _h === void 0 ? '서브타이틀은 두 줄이 최대로 적어주시면 됩니다. 서브타이틀은 두 줄이 최대로 적어주세요.' : _h,
-    _j = _a.likeCnt,
-    likeCnt = _j === void 0 ? 0 : _j,
-    _k = _a.chatCnt,
-    chatCnt = _k === void 0 ? 0 : _k,
-    _l = _a.sliderOpt,
-    sliderOpt = _l === void 0 ? {
+    imgList = _a.imgList,
+    _f = _a.title,
+    title = _f === void 0 ? '타이틀을 적어주세요.' : _f,
+    _g = _a.subtitle,
+    subtitle = _g === void 0 ? '서브타이틀은 두 줄이 최대로 적어주시면 됩니다. 서브타이틀은 두 줄이 최대로 적어주세요.' : _g,
+    _h = _a.likeCnt,
+    likeCnt = _h === void 0 ? 0 : _h,
+    _j = _a.chatCnt,
+    chatCnt = _j === void 0 ? 0 : _j,
+    _k = _a.sliderOpt,
+    sliderOpt = _k === void 0 ? {
       dots: true,
       infinite: true,
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false
-    } : _l,
-    _m = _a.gather,
-    gather = _m === void 0 ? false : _m,
-    _o = _a.declare,
-    declare = _o === void 0 ? false : _o;
+    } : _k,
+    _l = _a.gather,
+    gather = _l === void 0 ? false : _l,
+    _m = _a.declare,
+    declare = _m === void 0 ? false : _m;
     __rest(_a, ["profileUrl", "username", "category", "timing", "imgList", "title", "subtitle", "likeCnt", "chatCnt", "sliderOpt", "gather", "declare"]);
-  var _p = React.useState(false),
-    isHideContents = _p[0],
-    setHideContents = _p[1];
+  var _o = React.useState(false),
+    isHideContents = _o[0],
+    setHideContents = _o[1];
   React.useEffect(function () {
     if (declare) {
       setHideContents(true);
@@ -19304,7 +19303,7 @@ var SubTitle = function (_a) {
   }, "\uB354 \uBCF4\uAE30"))) : ( /*#__PURE__*/React.createElement("div", null, subtitle));
 };
 
-var css_248z$e = ".footer_container{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;align-items:center;border-top:1px solid #e2e2e2;display:flex;font-family:SF Pro Display,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Emoji,sans-serif;font-style:normal;height:47px;height:54px;justify-content:space-between;min-width:375px;padding:0;width:100%}.footer_container .menu_wrap{display:grid;gap:0;grid-template-columns:1fr 1fr 1fr 1fr;height:100%;width:100%}.footer_container .menu_wrap .menu{align-items:center;cursor:pointer;display:flex;height:100%;justify-content:center}.footer_container .menu_wrap .menu .icon_wrap{position:relative}.footer_container .menu_wrap .menu .icon_wrap .unread{left:12px;position:absolute;top:-6px}.footer_container .menu_wrap .menu .icon_wrap .unread_point span{display:none}.footer_container .menu_wrap .menu .icon_wrap .unread_point:after{background-color:var(--primary-orange);border-radius:50%;content:\"\";display:block;height:6px;position:absolute;right:-3px;top:0;width:6px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkZvb3Rlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGtCQUdFLGtDQUFtQyxDQUNuQyxpQ0FBa0MsQ0FHbEMsa0JBQW1CLENBS25CLDRCQUE2QixDQUQ3QixZQUFhLENBVmIsME5BQTZQLENBQzdQLGlCQUFrQixDQVFsQixXQUFZLENBSVosV0FBWSxDQVJaLDZCQUE4QixDQUc5QixlQUFnQixDQUloQixTQUFVLENBTFYsVUFPRixDQUNBLDZCQUdFLFlBQWEsQ0FFYixLQUFNLENBRE4scUNBQXNDLENBRnRDLFdBQVksQ0FEWixVQUtGLENBQ0EsbUNBSUUsa0JBQW1CLENBRm5CLGNBQWUsQ0FEZixZQUFhLENBRWIsV0FBWSxDQUVaLHNCQUNGLENBQ0EsOENBQ0UsaUJBQ0YsQ0FDQSxzREFFRSxTQUFVLENBRFYsaUJBQWtCLENBRWxCLFFBQ0YsQ0FDQSxpRUFDRSxZQUNGLENBQ0Esa0VBU0Usc0NBQXVDLENBRHZDLGlCQUFrQixDQVBsQixVQUFXLENBSVgsYUFBYyxDQUVkLFVBQVcsQ0FMWCxpQkFBa0IsQ0FDbEIsVUFBVyxDQUNYLEtBQU0sQ0FFTixTQUlGIiwiZmlsZSI6IkZvb3Rlci5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvb3Rlcl9jb250YWluZXIge1xuICBmb250LWZhbWlseTogXCJTRiBQcm8gRGlzcGxheVwiLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsIHN5c3RlbS11aSwgUm9ib3RvLCBcIkhlbHZldGljYSBOZXVlXCIsIFwiU2Vnb2UgVUlcIiwgXCJBcHBsZSBTRCBHb3RoaWMgTmVvXCIsIFwiTm90byBTYW5zIEtSXCIsIFwiTWFsZ3VuIEdvdGhpY1wiLCBcIkFwcGxlIENvbG9yIEVtb2ppXCIsIFwiU2Vnb2UgVUkgRW1vamlcIiwgXCJTZWdvZSBVSSBTeW1ib2xcIiwgXCJOb3RvIEVtb2ppXCIsIHNhbnMtc2VyaWY7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgd2lkdGg6IDEwMCU7XG4gIG1pbi13aWR0aDogMzc1cHg7XG4gIGhlaWdodDogNDdweDtcbiAgZGlzcGxheTogZmxleDtcbiAgYm9yZGVyLXRvcDogMXB4IHNvbGlkICNlMmUyZTI7XG4gIHBhZGRpbmc6IDA7XG4gIGhlaWdodDogNTRweDtcbn1cbi5mb290ZXJfY29udGFpbmVyIC5tZW51X3dyYXAge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBkaXNwbGF5OiBncmlkO1xuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyIDFmcjtcbiAgZ2FwOiAwO1xufVxuLmZvb3Rlcl9jb250YWluZXIgLm1lbnVfd3JhcCAubWVudSB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgaGVpZ2h0OiAxMDAlO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cbi5mb290ZXJfY29udGFpbmVyIC5tZW51X3dyYXAgLm1lbnUgLmljb25fd3JhcCB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cbi5mb290ZXJfY29udGFpbmVyIC5tZW51X3dyYXAgLm1lbnUgLmljb25fd3JhcCAudW5yZWFkIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBsZWZ0OiAxMnB4O1xuICB0b3A6IC02cHg7XG59XG4uZm9vdGVyX2NvbnRhaW5lciAubWVudV93cmFwIC5tZW51IC5pY29uX3dyYXAgLnVucmVhZF9wb2ludCBzcGFuIHtcbiAgZGlzcGxheTogbm9uZTtcbn1cbi5mb290ZXJfY29udGFpbmVyIC5tZW51X3dyYXAgLm1lbnUgLmljb25fd3JhcCAudW5yZWFkX3BvaW50OjphZnRlciB7XG4gIGNvbnRlbnQ6IFwiXCI7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgcmlnaHQ6IC0zcHg7XG4gIHRvcDogMDtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHdpZHRoOiA2cHg7XG4gIGhlaWdodDogNnB4O1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLXByaW1hcnktb3JhbmdlKTtcbn0iXX0= */";
+var css_248z$e = ".footer_container{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;align-items:center;background-color:var(--white);border-top:1px solid #e2e2e2;display:flex;font-family:SF Pro Display,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Emoji,sans-serif;font-style:normal;height:54px;justify-content:space-between;min-width:375px;padding:0;width:100%}.footer_container .menu_wrap{display:grid;gap:0;grid-template-columns:1fr 1fr 1fr 1fr;height:100%;width:100%}.footer_container .menu_wrap .menu{align-items:center;cursor:pointer;display:flex;height:100%;justify-content:center}.footer_container .menu_wrap .menu .icon_wrap{position:relative}.footer_container .menu_wrap .menu .icon_wrap .unread{left:12px;position:absolute;top:-6px}.footer_container .menu_wrap .menu .icon_wrap .unread_point span{display:none}.footer_container .menu_wrap .menu .icon_wrap .unread_point:after{background-color:var(--primary-orange);border-radius:50%;content:\"\";display:block;height:6px;position:absolute;right:-3px;top:0;width:6px}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkZvb3Rlci5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGtCQUdFLGtDQUFtQyxDQUNuQyxpQ0FBa0MsQ0FHbEMsa0JBQW1CLENBRW5CLDZCQUE4QixDQUQ5Qiw0QkFBNkIsQ0FIN0IsWUFBYSxDQUpiLDBOQUE2UCxDQUM3UCxpQkFBa0IsQ0FVbEIsV0FBWSxDQU5aLDZCQUE4QixDQU85QixlQUFnQixDQUhoQixTQUFVLENBQ1YsVUFHRixDQUNBLDZCQUdFLFlBQWEsQ0FFYixLQUFNLENBRE4scUNBQXNDLENBRnRDLFdBQVksQ0FEWixVQUtGLENBQ0EsbUNBSUUsa0JBQW1CLENBRm5CLGNBQWUsQ0FEZixZQUFhLENBRWIsV0FBWSxDQUVaLHNCQUNGLENBQ0EsOENBQ0UsaUJBQ0YsQ0FDQSxzREFFRSxTQUFVLENBRFYsaUJBQWtCLENBRWxCLFFBQ0YsQ0FDQSxpRUFDRSxZQUNGLENBQ0Esa0VBU0Usc0NBQXVDLENBRHZDLGlCQUFrQixDQVBsQixVQUFXLENBSVgsYUFBYyxDQUVkLFVBQVcsQ0FMWCxpQkFBa0IsQ0FDbEIsVUFBVyxDQUNYLEtBQU0sQ0FFTixTQUlGIiwiZmlsZSI6IkZvb3Rlci5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvb3Rlcl9jb250YWluZXIge1xuICBmb250LWZhbWlseTogXCJTRiBQcm8gRGlzcGxheVwiLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsIHN5c3RlbS11aSwgUm9ib3RvLCBcIkhlbHZldGljYSBOZXVlXCIsIFwiU2Vnb2UgVUlcIiwgXCJBcHBsZSBTRCBHb3RoaWMgTmVvXCIsIFwiTm90byBTYW5zIEtSXCIsIFwiTWFsZ3VuIEdvdGhpY1wiLCBcIkFwcGxlIENvbG9yIEVtb2ppXCIsIFwiU2Vnb2UgVUkgRW1vamlcIiwgXCJTZWdvZSBVSSBTeW1ib2xcIiwgXCJOb3RvIEVtb2ppXCIsIHNhbnMtc2VyaWY7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgYm9yZGVyLXRvcDogMXB4IHNvbGlkICNlMmUyZTI7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLXdoaXRlKTtcbiAgcGFkZGluZzogMDtcbiAgd2lkdGg6IDEwMCU7XG4gIGhlaWdodDogNTRweDtcbiAgbWluLXdpZHRoOiAzNzVweDtcbn1cbi5mb290ZXJfY29udGFpbmVyIC5tZW51X3dyYXAge1xuICB3aWR0aDogMTAwJTtcbiAgaGVpZ2h0OiAxMDAlO1xuICBkaXNwbGF5OiBncmlkO1xuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnIgMWZyIDFmcjtcbiAgZ2FwOiAwO1xufVxuLmZvb3Rlcl9jb250YWluZXIgLm1lbnVfd3JhcCAubWVudSB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgaGVpZ2h0OiAxMDAlO1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbn1cbi5mb290ZXJfY29udGFpbmVyIC5tZW51X3dyYXAgLm1lbnUgLmljb25fd3JhcCB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbn1cbi5mb290ZXJfY29udGFpbmVyIC5tZW51X3dyYXAgLm1lbnUgLmljb25fd3JhcCAudW5yZWFkIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBsZWZ0OiAxMnB4O1xuICB0b3A6IC02cHg7XG59XG4uZm9vdGVyX2NvbnRhaW5lciAubWVudV93cmFwIC5tZW51IC5pY29uX3dyYXAgLnVucmVhZF9wb2ludCBzcGFuIHtcbiAgZGlzcGxheTogbm9uZTtcbn1cbi5mb290ZXJfY29udGFpbmVyIC5tZW51X3dyYXAgLm1lbnUgLmljb25fd3JhcCAudW5yZWFkX3BvaW50OjphZnRlciB7XG4gIGNvbnRlbnQ6IFwiXCI7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgcmlnaHQ6IC0zcHg7XG4gIHRvcDogMDtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHdpZHRoOiA2cHg7XG4gIGhlaWdodDogNnB4O1xuICBib3JkZXItcmFkaXVzOiA1MCU7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLXByaW1hcnktb3JhbmdlKTtcbn0iXX0= */";
 styleInject(css_248z$e);
 
 var Footer = function (_a) {

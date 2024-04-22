@@ -8,11 +8,6 @@ import {map} from 'lodash-es'
 import './Slick.scss'
 import './Feed.scss'
 
-type Image = {
-  url: string
-  desc: string
-}
-
 interface sliderOpt {
   dots: boolean
   infinite: boolean
@@ -27,7 +22,10 @@ interface FeedProps {
   username: string
   category: string
   timing: string
-  imgList: Array<Image>
+  imgList: Array<{
+    url: string
+    desc: string
+  }>
   title: string
   subtitle: string
   likeCnt: number
@@ -42,7 +40,7 @@ const Feed = ({
   username = '홍길동',
   category = '주제',
   timing = '3분 전',
-  imgList,
+  imgList = [],
   title = '타이틀을 적어주세요.',
   subtitle = '서브타이틀은 두 줄이 최대로 적어주시면 됩니다. 서브타이틀은 두 줄이 최대로 적어주세요.',
   likeCnt = 0,
