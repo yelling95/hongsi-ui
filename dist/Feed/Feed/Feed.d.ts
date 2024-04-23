@@ -12,8 +12,11 @@ type FeedProps = {
     gather?: boolean;
     declare?: boolean;
     children?: any;
+    onClickLike?: () => void;
+    onClickChat?: () => void;
+    onClickMore?: () => void;
 };
-declare function Feed({ profileUrl, username, category, timing, title, subtitle, likeCnt, chatCnt, gather, declare, children, ...props }: FeedProps): React.JSX.Element;
+declare function Feed({ profileUrl, username, category, timing, title, subtitle, likeCnt, chatCnt, gather, declare, children, onClickLike, onClickChat, onClickMore, ...props }: FeedProps): React.JSX.Element;
 declare namespace Feed {
     var defaultProps: {
         profileUrl: string;
@@ -26,6 +29,9 @@ declare namespace Feed {
         chatCnt: number;
         gather: boolean;
         declare: boolean;
+        onClickLike: () => void;
+        onClickChat: () => void;
+        onClickMore: () => void;
     };
 }
 export default Feed;

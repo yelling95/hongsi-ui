@@ -1166,8 +1166,11 @@ function Feed(_a) {
     chatCnt = _a.chatCnt,
     gather = _a.gather,
     declare = _a.declare,
-    children = _a.children;
-    __rest(_a, ["profileUrl", "username", "category", "timing", "title", "subtitle", "likeCnt", "chatCnt", "gather", "declare", "children"]);
+    children = _a.children,
+    onClickLike = _a.onClickLike,
+    onClickChat = _a.onClickChat,
+    onClickMore = _a.onClickMore;
+    __rest(_a, ["profileUrl", "username", "category", "timing", "title", "subtitle", "likeCnt", "chatCnt", "gather", "declare", "children", "onClickLike", "onClickChat", "onClickMore"]);
   var _b = React.useState(false),
     isHideContents = _b[0],
     setHideContents = _b[1];
@@ -1201,7 +1204,8 @@ function Feed(_a) {
     className: "more"
   }, /*#__PURE__*/React.createElement(Icon, {
     id: "More",
-    color: "#ABABAB"
+    color: "#ABABAB",
+    onClick: onClickMore
   }))), /*#__PURE__*/React.createElement("div", {
     className: classnames('declare_wrap', declare && 'show', !isHideContents && 'show_contents')
   }, /*#__PURE__*/React.createElement("div", {
@@ -1230,12 +1234,14 @@ function Feed(_a) {
   })), /*#__PURE__*/React.createElement("div", {
     className: "footer_wrap"
   }, /*#__PURE__*/React.createElement("div", {
-    className: classnames('status_wrap', 'like')
+    className: classnames('status_wrap', 'like'),
+    onClick: onClickLike
   }, /*#__PURE__*/React.createElement(Icon, {
     id: "Like",
     color: "#676767"
   }), /*#__PURE__*/React.createElement("span", null, likeCnt)), /*#__PURE__*/React.createElement("div", {
-    className: classnames('status_wrap', 'chat')
+    className: classnames('status_wrap', 'chat'),
+    onClick: onClickChat
   }, /*#__PURE__*/React.createElement(Icon, {
     id: "Chat",
     color: "#676767"
@@ -1265,7 +1271,10 @@ Feed.defaultProps = {
   likeCnt: 0,
   chatCnt: 0,
   gather: false,
-  declare: false
+  declare: false,
+  onClickLike: function () {},
+  onClickChat: function () {},
+  onClickMore: function () {}
 };
 
 /** Detect free variable `global` from Node.js. */
