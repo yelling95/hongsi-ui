@@ -8,15 +8,15 @@ type FeedProps = {
     title?: string;
     subtitle?: string;
     likeCnt?: number;
-    chatCnt?: number;
+    commentCnt?: number;
     gather?: boolean;
     declare?: boolean;
     children?: any;
     onClickLike?: () => void;
-    onClickChat?: () => void;
+    onClickComment?: () => void;
     onClickMore?: () => void;
 };
-declare function Feed({ profileUrl, username, category, timing, title, subtitle, likeCnt, chatCnt, gather, declare, children, onClickLike, onClickChat, onClickMore, ...props }: FeedProps): React.JSX.Element;
+declare function Feed({ profileUrl, username, category, timing, title, subtitle, likeCnt, commentCnt, gather, declare, children, onClickLike, onClickComment, onClickMore, ...props }: FeedProps): React.JSX.Element;
 declare namespace Feed {
     var defaultProps: {
         profileUrl: string;
@@ -26,11 +26,11 @@ declare namespace Feed {
         title: string;
         subtitle: string;
         likeCnt: number;
-        chatCnt: number;
+        commentCnt: number;
         gather: boolean;
         declare: boolean;
         onClickLike: () => void;
-        onClickChat: () => void;
+        onClickComment: () => void;
         onClickMore: () => void;
     };
 }

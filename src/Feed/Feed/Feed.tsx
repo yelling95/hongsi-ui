@@ -13,12 +13,12 @@ type FeedProps = {
   title?: string
   subtitle?: string
   likeCnt?: number
-  chatCnt?: number
+  commentCnt?: number
   gather?: boolean
   declare?: boolean
   children?: any
   onClickLike?: () => void
-  onClickChat?: () => void
+  onClickComment?: () => void
   onClickMore?: () => void
 }
 
@@ -30,12 +30,12 @@ export default function Feed({
   title,
   subtitle,
   likeCnt,
-  chatCnt,
+  commentCnt,
   gather,
   declare,
   children,
   onClickLike,
-  onClickChat,
+  onClickComment,
   onClickMore,
   ...props
 }: FeedProps) {
@@ -93,9 +93,9 @@ export default function Feed({
           <Icon id="Like" color="#676767" />
           <span>{likeCnt}</span>
         </div>
-        <div className={classnames('status_wrap', 'chat')} onClick={onClickChat}>
+        <div className={classnames('status_wrap', 'comment')} onClick={onClickComment}>
           <Icon id="Chat" color="#676767" />
-          <span>{chatCnt}</span>
+          <span>{commentCnt}</span>
         </div>
       </div>
     </div>
@@ -125,10 +125,10 @@ Feed.defaultProps = {
   subtitle:
     '서브타이틀은 두 줄이 최대로 적어주시면 됩니다. 서브타이틀은 두 줄이 최대로 적어주세요.',
   likeCnt: 0,
-  chatCnt: 0,
+  commentCnt: 0,
   gather: false,
   declare: false,
   onClickLike: () => {},
-  onClickChat: () => {},
+  onClickComment: () => {},
   onClickMore: () => {},
 }

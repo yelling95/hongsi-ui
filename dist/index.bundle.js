@@ -1163,14 +1163,14 @@ function Feed(_a) {
     title = _a.title,
     subtitle = _a.subtitle,
     likeCnt = _a.likeCnt,
-    chatCnt = _a.chatCnt,
+    commentCnt = _a.commentCnt,
     gather = _a.gather,
     declare = _a.declare,
     children = _a.children,
     onClickLike = _a.onClickLike,
-    onClickChat = _a.onClickChat,
+    onClickComment = _a.onClickComment,
     onClickMore = _a.onClickMore;
-    __rest(_a, ["profileUrl", "username", "category", "timing", "title", "subtitle", "likeCnt", "chatCnt", "gather", "declare", "children", "onClickLike", "onClickChat", "onClickMore"]);
+    __rest(_a, ["profileUrl", "username", "category", "timing", "title", "subtitle", "likeCnt", "commentCnt", "gather", "declare", "children", "onClickLike", "onClickComment", "onClickMore"]);
   var _b = React.useState(false),
     isHideContents = _b[0],
     setHideContents = _b[1];
@@ -1240,12 +1240,12 @@ function Feed(_a) {
     id: "Like",
     color: "#676767"
   }), /*#__PURE__*/React.createElement("span", null, likeCnt)), /*#__PURE__*/React.createElement("div", {
-    className: classnames('status_wrap', 'chat'),
-    onClick: onClickChat
+    className: classnames('status_wrap', 'comment'),
+    onClick: onClickComment
   }, /*#__PURE__*/React.createElement(Icon, {
     id: "Chat",
     color: "#676767"
-  }), /*#__PURE__*/React.createElement("span", null, chatCnt))));
+  }), /*#__PURE__*/React.createElement("span", null, commentCnt))));
 }
 var SubTitle = function (_a) {
   var _b = _a.subtitle,
@@ -1269,11 +1269,11 @@ Feed.defaultProps = {
   title: '타이틀을 적어주세요.',
   subtitle: '서브타이틀은 두 줄이 최대로 적어주시면 됩니다. 서브타이틀은 두 줄이 최대로 적어주세요.',
   likeCnt: 0,
-  chatCnt: 0,
+  commentCnt: 0,
   gather: false,
   declare: false,
   onClickLike: function () {},
-  onClickChat: function () {},
+  onClickComment: function () {},
   onClickMore: function () {}
 };
 
