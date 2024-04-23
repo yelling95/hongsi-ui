@@ -17,6 +17,9 @@ type FeedProps = {
   gather?: boolean
   declare?: boolean
   children?: any
+  onClickLike?: () => void
+  onClickChat?: () => void
+  onClickMore?: () => void
 }
 
 export default function Feed({
@@ -31,6 +34,9 @@ export default function Feed({
   gather,
   declare,
   children,
+  onClickLike,
+  onClickChat,
+  onClickMore,
   ...props
 }: FeedProps) {
   const [isHideContents, setHideContents] = React.useState(false)
@@ -57,7 +63,7 @@ export default function Feed({
           </div>
         </div>
         <div className="more">
-          <Icon id="More" color="#ABABAB" />
+          <Icon id="More" color="#ABABAB" onClick={onClickMore} />
         </div>
       </div>
       <div
@@ -83,11 +89,11 @@ export default function Feed({
         {gather && <Gather size="md" />}
       </div>
       <div className="footer_wrap">
-        <div className={classnames('status_wrap', 'like')}>
+        <div className={classnames('status_wrap', 'like')} onClick={onClickLike}>
           <Icon id="Like" color="#676767" />
           <span>{likeCnt}</span>
         </div>
-        <div className={classnames('status_wrap', 'chat')}>
+        <div className={classnames('status_wrap', 'chat')} onClick={onClickChat}>
           <Icon id="Chat" color="#676767" />
           <span>{chatCnt}</span>
         </div>
@@ -122,4 +128,7 @@ Feed.defaultProps = {
   chatCnt: 0,
   gather: false,
   declare: false,
+  onClickLike: () => {},
+  onClickChat: () => {},
+  onClickMore: () => {},
 }
