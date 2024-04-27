@@ -6,7 +6,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  width: 375px;
+  min-width: 375px;
+  max-width: 430px;
   padding: 20px;
 
   .header_wrap {
