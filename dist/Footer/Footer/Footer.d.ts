@@ -2,7 +2,6 @@ import React from 'react';
 import './Footer.scss';
 interface Menu {
     id: string;
-    path: string;
     icon?: 'Home' | 'Group' | 'Chat' | 'Account';
     active: boolean;
     unread: number;

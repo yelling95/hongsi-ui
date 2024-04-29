@@ -19298,15 +19298,16 @@ var Footer = function (_a) {
   }, /*#__PURE__*/React.createElement("div", {
     className: "menu_wrap"
   }, map(menuList, function (_a) {
-    var id = _a.id;
-      _a.path;
-      var icon = _a.icon,
+    var id = _a.id,
+      icon = _a.icon,
       active = _a.active,
       unread = _a.unread,
-      unreadStyle = _a.unreadStyle;
+      unreadStyle = _a.unreadStyle,
+      onClick = _a.onClick;
     return /*#__PURE__*/React.createElement("div", {
       key: "menu-".concat(id),
-      className: classnames(active ? ['menu', 'active'] : 'menu')
+      className: classnames(active ? ['menu', 'active'] : 'menu'),
+      onClick: onClick
     }, /*#__PURE__*/React.createElement("div", {
       className: "icon_wrap"
     }, /*#__PURE__*/React.createElement(Icon, {

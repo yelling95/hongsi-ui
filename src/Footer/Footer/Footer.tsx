@@ -7,7 +7,6 @@ import './Footer.scss'
 
 interface Menu {
   id: string
-  path: string
   icon?: 'Home' | 'Group' | 'Chat' | 'Account'
   active: boolean
   unread: number
@@ -26,8 +25,11 @@ const Footer = ({
   return (
     <div className="footer_container">
       <div className="menu_wrap">
-        {map(menuList, ({id, path, icon, active, unread, unreadStyle}) => (
-          <div key={`menu-${id}`} className={classnames(active ? ['menu', 'active'] : 'menu')}>
+        {map(menuList, ({id, icon, active, unread, unreadStyle, onClick}) => (
+          <div
+            key={`menu-${id}`}
+            className={classnames(active ? ['menu', 'active'] : 'menu')}
+            onClick={onClick}>
             <div className="icon_wrap">
               <Icon
                 id={icon}
