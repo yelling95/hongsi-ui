@@ -1,4 +1,4 @@
-import React, {CSSProperties, ReactElement} from 'react'
+import React, {CSSProperties, useMemo} from 'react'
 import classNames from 'classnames'
 import {map} from 'lodash-es'
 
@@ -73,8 +73,17 @@ export default function MoreOption({
     }
   }, [isShow])
 
+  const height = useMemo(() => {
+    const padding = 23
+    const optHeight = 45
+    if (!options) return '50%'
+    return padding + optHeight * options.length + padding
+  }, [options])
+
   return (
-    <div className={classNames('moreopt_container', 'slider', isShow && 'open')} style={csStyle}>
+    <div
+      className={classNames('moreopt_container', 'slider', isShow && 'open')}
+      style={{...csStyle, height}}>
       <div className="option_wrap">
         {map(options, (opt, optIdx) => (
           <div
