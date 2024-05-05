@@ -9,7 +9,7 @@ type TextFieldProps = {
   id?: string
   size?: 'lg' | 'md' | 'sm'
   style?: CSSProperties
-  type?: 'default' | 'search' | 'number' | 'numberOnly' | 'decimal' | 'phone'
+  type?: 'default' | 'search' | 'number' | 'numberOnly' | 'decimal' | 'phone' | 'post'
   className?: string
   disabled?: boolean | undefined
   placeholder?: string | undefined

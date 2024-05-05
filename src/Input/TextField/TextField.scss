@@ -43,7 +43,8 @@
     &.number,
     &.numberOnly,
     &.decimal,
-    &.phone {
+    &.phone,
+    &.post {
       --input-border-radius: 0px;
       --input-padding: 0px;
 
@@ -51,14 +52,30 @@
       --color: var(--black);
       --input-placeholder-color: var(--grey-60);
 
-      --border-color: var(--primary-orange);
       --focus-border-color: var(--primary-orange);
 
       --disabled-color: var(--grey-60);
       --disabled-background: var(--grey-50);
+    }
 
+    &.default,
+    &.number,
+    &.numberOnly,
+    &.decimal,
+    &.phone {
+      --border-color: var(--primary-orange);
       border-bottom: 1px solid var(--border-color);
     }
+
+    &.post {
+      --border-color: var(--grey-30);
+      --font-weight: 700;
+      --font-size: 22px;
+      --line-height: 30px;
+      --input-height: 34px;
+      border-bottom: 1px solid var(--border-color);
+    }
+
     &.search {
       --input-border-radius: 8px;
       --input-padding: 8px 12px;
