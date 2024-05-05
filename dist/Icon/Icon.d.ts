@@ -1,7 +1,7 @@
 import React, { CSSProperties, SVGProps } from 'react';
 import './Icon.scss';
 interface IconProps {
-    id?: 'Account' | 'Like' | 'LocationPin' | 'More' | 'Warning' | 'Close' | 'EditWrite' | 'Search' | 'Left' | 'Right' | 'Share' | 'More' | 'Clear' | 'Notification' | 'NotificationNone' | 'Filter' | 'Dropdown' | 'Home' | 'Group' | 'Chat' | 'Check' | 'Collapse' | 'Default';
+    id?: 'Account' | 'Add' | 'All' | 'Calendar' | 'Camera' | 'Chat' | 'Check' | 'Clear' | 'Close' | 'Collapse' | 'Default' | 'Dropdown' | 'EditWrite' | 'Empty' | 'Filter' | 'Group' | 'Home' | 'Left' | 'Right' | 'Like' | 'LocationPin' | 'More' | 'Warning' | 'Notification' | 'NotificationNone' | 'Photo' | 'Search' | 'Send' | 'Share' | 'Time' | 'Warning';
     width?: number;
     height?: number;
     viewBox?: string;

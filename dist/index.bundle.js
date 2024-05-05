@@ -833,57 +833,79 @@ var getIconSvg = function (id, color, fill) {
   }) : /*#__PURE__*/React.createElement(Svg.Like, {
     color: color
   });
-  if (id === 'LocationPin') return /*#__PURE__*/React.createElement(Svg.LocationPin, {
-    color: color
-  });
-  if (id === 'More') return /*#__PURE__*/React.createElement(Svg.More, {
-    color: color
-  });
-  if (id === 'Warning') return /*#__PURE__*/React.createElement(Svg.Warning, {
-    color: color
-  });
-  if (id === 'Close') return /*#__PURE__*/React.createElement(Svg.Close, {
-    color: color
-  });
-  if (id === 'EditWrite') return /*#__PURE__*/React.createElement(Svg.EditWrite, {
-    color: color
-  });
-  if (id === 'Search') return /*#__PURE__*/React.createElement(Svg.Search, {
-    color: color
-  });
-  if (id === 'Left') return /*#__PURE__*/React.createElement(Svg.Left, {
-    color: color
-  });
-  if (id === 'Right') return /*#__PURE__*/React.createElement(Svg.Left, {
-    color: color
-  });
-  if (id === 'Share') return /*#__PURE__*/React.createElement(Svg.Share, {
-    color: color
-  });
-  if (id === 'More') return /*#__PURE__*/React.createElement(Svg.More, {
-    color: color
-  });
-  if (id === 'Clear') return /*#__PURE__*/React.createElement(Svg.Clear, {
-    color: color
-  });
   if (id === 'Notification') return fill ? /*#__PURE__*/React.createElement(Svg.NotificationFull, {
     color: fill
   }) : /*#__PURE__*/React.createElement(Svg.Notification, {
     color: color
   });
-  if (id === 'NotificationNone') return /*#__PURE__*/React.createElement(Svg.NotificationNone, {
+  if (id === 'Add') return /*#__PURE__*/React.createElement(Svg.Add, {
     color: color
   });
-  if (id === 'Filter') return /*#__PURE__*/React.createElement(Svg.Filter, {
+  if (id === 'All') return /*#__PURE__*/React.createElement(Svg.All, {
     color: color
   });
-  if (id === 'Dropdown') return /*#__PURE__*/React.createElement(Svg.Dropdown, {
+  if (id === 'Calendar') return /*#__PURE__*/React.createElement(Svg.Calendar, {
+    color: color
+  });
+  if (id === 'Camera') return /*#__PURE__*/React.createElement(Svg.Camera, {
     color: color
   });
   if (id === 'Check') return /*#__PURE__*/React.createElement(Svg.Check, {
     color: color
   });
   if (id === 'Collapse') return /*#__PURE__*/React.createElement(Svg.Collapse, {
+    color: color
+  });
+  if (id === 'Close') return /*#__PURE__*/React.createElement(Svg.Close, {
+    color: color
+  });
+  if (id === 'Dropdown') return /*#__PURE__*/React.createElement(Svg.Dropdown, {
+    color: color
+  });
+  if (id === 'EditWrite') return /*#__PURE__*/React.createElement(Svg.EditWrite, {
+    color: color
+  });
+  if (id === 'Empty') return /*#__PURE__*/React.createElement(Svg.Empty, {
+    color: color
+  });
+  if (id === 'HomeHouse') return /*#__PURE__*/React.createElement(Svg.HomeHouse, null);
+  if (id === 'Left') return /*#__PURE__*/React.createElement(Svg.Left, {
+    color: color
+  });
+  if (id === 'LocationPin') return /*#__PURE__*/React.createElement(Svg.LocationPin, {
+    color: color
+  });
+  if (id === 'Right') return /*#__PURE__*/React.createElement(Svg.Left, {
+    color: color
+  });
+  if (id === 'More') return /*#__PURE__*/React.createElement(Svg.More, {
+    color: color
+  });
+  if (id === 'NotificationNone') return /*#__PURE__*/React.createElement(Svg.NotificationNone, {
+    color: color
+  });
+  if (id === 'Photo') return /*#__PURE__*/React.createElement(Svg.Photo, {
+    color: color
+  });
+  if (id === 'Search') return /*#__PURE__*/React.createElement(Svg.Search, {
+    color: color
+  });
+  if (id === 'Share') return /*#__PURE__*/React.createElement(Svg.Share, {
+    color: color
+  });
+  if (id === 'Send') return /*#__PURE__*/React.createElement(Svg.Send, {
+    color: color
+  });
+  if (id === 'Time') return /*#__PURE__*/React.createElement(Svg.Time, {
+    color: color
+  });
+  if (id === 'Warning') return /*#__PURE__*/React.createElement(Svg.Warning, {
+    color: color
+  });
+  if (id === 'Clear') return /*#__PURE__*/React.createElement(Svg.Clear, {
+    color: color
+  });
+  if (id === 'Filter') return /*#__PURE__*/React.createElement(Svg.Filter, {
     color: color
   });
   if (id === 'Default') return /*#__PURE__*/React.createElement(Svg.Default, {
