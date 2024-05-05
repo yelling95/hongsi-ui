@@ -87,15 +87,17 @@ export default function Dropdown({
     <div
       className={classNames('dropdown_container', 'slider', isShow && 'open')}
       style={{...csStyle, height}}>
-      <div className="option_wrap">
-        {map(options, (opt, optIdx) => (
-          <div
-            key={`dropdown-option-${optIdx}`}
-            className={classNames(opt.id === selected && 'selected')}
-            onClick={opt.click}>
-            {opt.label}
-          </div>
-        ))}
+      <div className="scroll_wrap">
+        <div className="option_wrap">
+          {map(options, (opt, optIdx) => (
+            <div
+              key={`dropdown-option-${optIdx}`}
+              className={classNames(opt.id === selected && 'selected')}
+              onClick={opt.click}>
+              {opt.label}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )
