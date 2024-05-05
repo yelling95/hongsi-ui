@@ -2,7 +2,7 @@ import React, { CSSProperties } from 'react';
 import './IconButton.scss';
 interface IconButtonProps {
     id?: string;
-    type?: 'Account' | 'Like' | 'LocationPin' | 'More' | 'Warning' | 'Close' | 'EditWrite' | 'Search' | 'Left' | 'Right' | 'Share' | 'More' | 'Clear' | 'Notification' | 'NotificationNone' | 'Filter' | 'Dropdown' | 'Default';
+    type?: 'Account' | 'Add' | 'All' | 'Calendar' | 'Camera' | 'Chat' | 'Check' | 'Clear' | 'Close' | 'Collapse' | 'Default' | 'Dropdown' | 'EditWrite' | 'Empty' | 'Filter' | 'Group' | 'Home' | 'Left' | 'Right' | 'Like' | 'LocationPin' | 'More' | 'Warning' | 'Notification' | 'NotificationNone' | 'Photo' | 'Search' | 'Send' | 'Share' | 'Time' | 'Warning';
     size?: 'sm' | 'md' | 'lg';
     disabled?: boolean;
     children?: unknown;
