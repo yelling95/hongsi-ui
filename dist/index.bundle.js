@@ -19691,9 +19691,9 @@ function TextArea(_a) {
     disabled: disabled,
     placeholder: placeholder,
     value: value,
-    style: {
+    style: type === 'resize' ? {
       height: height
-    },
+    } : {},
     onFocus: function () {
       return setIsFocus(true);
     },
@@ -19703,7 +19703,7 @@ function TextArea(_a) {
     onChange: function (e) {
       return handleChange(e);
     }
-  }, props)), /*#__PURE__*/React.createElement("textarea", __assign({
+  }, props)), type === 'resize' && ( /*#__PURE__*/React.createElement("textarea", __assign({
     ref: textareaVirtualRef,
     id: "".concat(id, "-virtual"),
     value: value,
@@ -19712,7 +19712,7 @@ function TextArea(_a) {
     style: {
       height: defaultHeight
     }
-  }, props))), isState === 'error' && errorMessage && ( /*#__PURE__*/React.createElement("span", {
+  }, props)))), isState === 'error' && errorMessage && ( /*#__PURE__*/React.createElement("span", {
     className: "input_label_error"
   }, errorMessage)));
 }

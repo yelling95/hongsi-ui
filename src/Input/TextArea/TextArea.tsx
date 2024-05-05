@@ -90,20 +90,22 @@ export default function TextArea({
           disabled={disabled}
           placeholder={placeholder}
           value={value}
-          style={{height}}
+          style={type === 'resize' ? {height} : {}}
           onFocus={() => setIsFocus(true)}
           onBlur={() => setIsFocus(false)}
           onChange={(e) => handleChange(e)}
           {...props}></textarea>
 
-        <textarea
-          ref={textareaVirtualRef}
-          id={`${id}-virtual`}
-          value={value}
-          readOnly={true}
-          className="virtual"
-          style={{height: defaultHeight}}
-          {...props}></textarea>
+        {type === 'resize' && (
+          <textarea
+            ref={textareaVirtualRef}
+            id={`${id}-virtual`}
+            value={value}
+            readOnly={true}
+            className="virtual"
+            style={{height: defaultHeight}}
+            {...props}></textarea>
+        )}
       </div>
       {isState === 'error' && errorMessage && (
         <span className="input_label_error">{errorMessage}</span>
