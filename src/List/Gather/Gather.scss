@@ -6,6 +6,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  &:hover {
+    background-color: var(--grey-30);
+  }
+
   &.lg {
     --max-width: 375px;
     --height: 145px;
@@ -54,7 +58,7 @@
   padding: var(--padding);
   background-color: var(--white);
   border: 1px solid var(--border-color);
-  border-radius: 8px;
+  // border-radius: 8px;
   gap: 13px;
 
   .message {

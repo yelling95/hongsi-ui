@@ -1,6 +1,6 @@
 {
   "name": "hongsi-ui",
-  "version": "1.0.32",
+  "version": "1.0.33",
   "main": "dist/index.bundle.js",
   "types": "dist/index.d.ts",
   "files": [
