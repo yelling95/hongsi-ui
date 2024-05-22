@@ -21,7 +21,7 @@ const TextButton = ({
   return (
     <button
       id={id}
-      className={classnames('button_container')}
+      className={classnames('text_button_container')}
       onClick={onClick}
       style={style}
       disabled={disabled}

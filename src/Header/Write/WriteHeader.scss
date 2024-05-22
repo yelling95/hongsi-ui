@@ -28,6 +28,10 @@
 
     font-weight: 700;
     font-size: 15px;
-    color: var(--primary-orange);
+    color: var(--grey-60);
+
+    &:hover {
+      color: var(--primary-orange);
+    }
   }
 }
