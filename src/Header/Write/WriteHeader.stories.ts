@@ -25,6 +25,9 @@ export const Default: Story = {
 export const Save: Story = {
   args: {
     title: '글 작성',
-    writeUrl: '/write',
+    mode: 'write',
+    onSave: () => {
+      alert('글저장!')
+    },
   },
 }

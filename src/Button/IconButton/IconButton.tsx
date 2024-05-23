@@ -42,6 +42,7 @@ interface IconButtonProps {
   children?: unknown
   color?: string
   style?: CSSProperties
+  iconStyle?: CSSProperties
   fill?: string
   iconWidth?: number
   iconHeight?: number
@@ -59,6 +60,7 @@ const IconButton = ({
   iconWidth,
   iconHeight,
   style = {},
+  iconStyle = {},
   onClick = () => {},
   ...props
 }: IconButtonProps & React.HTMLAttributes<HTMLButtonElement>) => {
@@ -82,6 +84,7 @@ const IconButton = ({
             ? `0 0 ${iconWidth} ${iconHeight}`
             : '0 0 24 24'
         }
+        style={iconStyle}
         transform={type === 'Right' ? 'rotate(180)' : 'rotate(0)'}
       />
       {children}

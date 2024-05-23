@@ -25,6 +25,7 @@ const SortHeader = ({
           size="md"
           iconWidth={20}
           iconHeight={20}
+          iconStyle={{marginBottom: 4}}
           color="#ABABAB"
           onClick={onClickOrder}>
           {order}

@@ -8,10 +8,11 @@ interface IconButtonProps {
     children?: unknown;
     color?: string;
     style?: CSSProperties;
+    iconStyle?: CSSProperties;
     fill?: string;
     iconWidth?: number;
     iconHeight?: number;
     onClick?: () => void;
 }
-declare const IconButton: ({ id, type, size, disabled, children, color, fill, iconWidth, iconHeight, style, onClick, ...props }: IconButtonProps & React.HTMLAttributes<HTMLButtonElement>) => React.JSX.Element;
+declare const IconButton: ({ id, type, size, disabled, children, color, fill, iconWidth, iconHeight, style, iconStyle, onClick, ...props }: IconButtonProps & React.HTMLAttributes<HTMLButtonElement>) => React.JSX.Element;
 export default IconButton;
