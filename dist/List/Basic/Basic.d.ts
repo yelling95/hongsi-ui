@@ -7,5 +7,5 @@ interface BasicProps {
     children?: unknown;
     style?: CSSProperties;
 }
-declare const Basic: ({ id, size, type }: BasicProps & React.HTMLAttributes<HTMLButtonElement>) => React.JSX.Element;
+declare const Basic: ({ id, size, type, children, ...props }: BasicProps & React.HTMLAttributes<HTMLButtonElement>) => React.JSX.Element;
 export default Basic;
