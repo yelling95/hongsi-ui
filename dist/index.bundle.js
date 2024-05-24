@@ -19788,8 +19788,9 @@ var SearchHeader = function (_a) {
     _c = _a.disabled,
     disabled = _c === void 0 ? false : _c,
     value = _a.value,
+    placeholder = _a.placeholder,
     onChange = _a.onChange;
-    __rest(_a, ["goBack", "disabled", "value", "onChange"]);
+    __rest(_a, ["goBack", "disabled", "value", "placeholder", "onChange"]);
   return /*#__PURE__*/React.createElement("div", {
     className: "search_header_container"
   }, /*#__PURE__*/React.createElement("div", {
@@ -19804,6 +19805,7 @@ var SearchHeader = function (_a) {
   }, /*#__PURE__*/React.createElement(TextField, {
     type: "search",
     size: "md",
+    placeholder: placeholder,
     disabled: disabled,
     value: value,
     onChange: onChange
