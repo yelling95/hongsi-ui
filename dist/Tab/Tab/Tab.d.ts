@@ -9,7 +9,7 @@ interface TabProps {
     selected?: string;
     data: Array<TabItem>;
     style?: CSSProperties;
-    onClick?: () => void;
+    onClick?: (tabItem: TabItem) => void;
 }
-declare const Tab: ({ id, selected, data, style, onClick, }: TabProps & React.HTMLAttributes<HTMLButtonElement>) => React.JSX.Element;
+declare const Tab: ({ id, selected, data, style, onClick }: TabProps) => React.JSX.Element;
 export default Tab;

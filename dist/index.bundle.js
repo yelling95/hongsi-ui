@@ -19869,8 +19869,7 @@ styleInject(css_248z$7);
 var SortHeader = function (_a) {
   var _b = _a.order,
     order = _b === void 0 ? '최신순' : _b,
-    _c = _a.filter,
-    filter = _c === void 0 ? '전체' : _c,
+    filter = _a.filter,
     onClickOrder = _a.onClickOrder,
     onClickFilter = _a.onClickFilter;
     __rest(_a, ["order", "filter", "onClickOrder", "onClickFilter"]);
@@ -19888,7 +19887,7 @@ var SortHeader = function (_a) {
     },
     color: "#ABABAB",
     onClick: onClickOrder
-  }, order)), /*#__PURE__*/React.createElement("div", {
+  }, order)), filter && ( /*#__PURE__*/React.createElement("div", {
     className: "filter_wrap"
   }, /*#__PURE__*/React.createElement(IconButton, {
     type: "Filter",
@@ -19897,7 +19896,7 @@ var SortHeader = function (_a) {
     iconHeight: 13,
     color: "#ABABAB",
     onClick: onClickFilter
-  }, filter)));
+  }, filter))));
 };
 
 var css_248z$6 = ".gallery_header_container{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;align-items:center;display:flex;font-family:SF Pro Display,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Emoji,sans-serif;font-style:normal;height:47px;justify-content:space-between;min-width:375px;width:100%}.gallery_header_container .back_wrap{cursor:pointer}.gallery_header_container .title{align-items:center;display:flex;font-size:18px;font-weight:700;gap:5px}.gallery_header_container .title.open svg{transform:rotate(180deg)}.gallery_header_container .buttons_wrap{color:var(--grey-60);display:flex;font-size:15px;font-weight:700;gap:24px}.gallery_header_container .buttons_wrap:hover{color:var(--primary-orange)}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkdhbGxlcnlIZWFkZXIuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSwwQkFHRSxrQ0FBbUMsQ0FDbkMsaUNBQWtDLENBR2xDLGtCQUFtQixDQUZuQixZQUFhLENBSmIsME5BQTZQLENBQzdQLGlCQUFrQixDQVFsQixXQUFZLENBSlosNkJBQThCLENBRzlCLGVBQWdCLENBRGhCLFVBR0YsQ0FDQSxxQ0FDRSxjQUNGLENBQ0EsaUNBR0Usa0JBQW1CLENBRm5CLFlBQWEsQ0FJYixjQUFlLENBRGYsZUFBZ0IsQ0FGaEIsT0FJRixDQUNBLDBDQUNFLHdCQUNGLENBQ0Esd0NBS0Usb0JBQXFCLENBSnJCLFlBQWEsQ0FHYixjQUFlLENBRGYsZUFBZ0IsQ0FEaEIsUUFJRixDQUNBLDhDQUNFLDJCQUNGIiwiZmlsZSI6IkdhbGxlcnlIZWFkZXIuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5nYWxsZXJ5X2hlYWRlcl9jb250YWluZXIge1xuICBmb250LWZhbWlseTogXCJTRiBQcm8gRGlzcGxheVwiLCAtYXBwbGUtc3lzdGVtLCBCbGlua01hY1N5c3RlbUZvbnQsIHN5c3RlbS11aSwgUm9ib3RvLCBcIkhlbHZldGljYSBOZXVlXCIsIFwiU2Vnb2UgVUlcIiwgXCJBcHBsZSBTRCBHb3RoaWMgTmVvXCIsIFwiTm90byBTYW5zIEtSXCIsIFwiTWFsZ3VuIEdvdGhpY1wiLCBcIkFwcGxlIENvbG9yIEVtb2ppXCIsIFwiU2Vnb2UgVUkgRW1vamlcIiwgXCJTZWdvZSBVSSBTeW1ib2xcIiwgXCJOb3RvIEVtb2ppXCIsIHNhbnMtc2VyaWY7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgLXdlYmtpdC1mb250LXNtb290aGluZzogYW50aWFsaWFzZWQ7XG4gIC1tb3otb3N4LWZvbnQtc21vb3RoaW5nOiBncmF5c2NhbGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgd2lkdGg6IDEwMCU7XG4gIG1pbi13aWR0aDogMzc1cHg7XG4gIGhlaWdodDogNDdweDtcbn1cbi5nYWxsZXJ5X2hlYWRlcl9jb250YWluZXIgLmJhY2tfd3JhcCB7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn1cbi5nYWxsZXJ5X2hlYWRlcl9jb250YWluZXIgLnRpdGxlIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZ2FwOiA1cHg7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGZvbnQtd2VpZ2h0OiA3MDA7XG4gIGZvbnQtc2l6ZTogMThweDtcbn1cbi5nYWxsZXJ5X2hlYWRlcl9jb250YWluZXIgLnRpdGxlLm9wZW4gc3ZnIHtcbiAgdHJhbnNmb3JtOiByb3RhdGUoMTgwZGVnKTtcbn1cbi5nYWxsZXJ5X2hlYWRlcl9jb250YWluZXIgLmJ1dHRvbnNfd3JhcCB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGdhcDogMjRweDtcbiAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgZm9udC1zaXplOiAxNXB4O1xuICBjb2xvcjogdmFyKC0tZ3JleS02MCk7XG59XG4uZ2FsbGVyeV9oZWFkZXJfY29udGFpbmVyIC5idXR0b25zX3dyYXA6aG92ZXIge1xuICBjb2xvcjogdmFyKC0tcHJpbWFyeS1vcmFuZ2UpO1xufSJdfQ== */";
@@ -20241,16 +20240,21 @@ var Tab = function (_a) {
     _c = _a.data,
     data = _c === void 0 ? [] : _c,
     _d = _a.style,
-    style = _d === void 0 ? {} : _d;
-    _a.onClick;
+    style = _d === void 0 ? {} : _d,
+    _e = _a.onClick,
+    onClick = _e === void 0 ? function (tabItem) {} : _e;
   return /*#__PURE__*/React.createElement("div", {
     id: id,
     className: classnames('tab_group_container'),
     style: style
   }, map(data, function (t) {
     return /*#__PURE__*/React.createElement("div", {
+      key: t.id,
       id: "tab-".concat(t.id),
-      className: classnames('tab_container', selected === t.id && 'selected')
+      className: classnames('tab_container', selected === t.id && 'selected'),
+      onClick: function () {
+        return onClick(t);
+      }
     }, t.label);
   }));
 };

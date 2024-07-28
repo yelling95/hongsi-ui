@@ -13,22 +13,18 @@ interface TabProps {
   selected?: string
   data: Array<TabItem>
   style?: CSSProperties
-  onClick?: () => void
+  onClick?: (tabItem: TabItem) => void
 }
 
-const Tab = ({
-  id,
-  selected = '01',
-  data = [],
-  style = {},
-  onClick = () => {},
-}: TabProps & React.HTMLAttributes<HTMLButtonElement>) => {
+const Tab = ({id, selected = '01', data = [], style = {}, onClick = (tabItem) => {}}: TabProps) => {
   return (
     <div id={id} className={classnames('tab_group_container')} style={style}>
       {map(data, (t) => (
         <div
+          key={t.id}
           id={`tab-${t.id}`}
-          className={classnames('tab_container', selected === t.id && 'selected')}>
+          className={classnames('tab_container', selected === t.id && 'selected')}
+          onClick={() => onClick(t)}>
           {t.label}
         </div>
       ))}

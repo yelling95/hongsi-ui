@@ -5,14 +5,14 @@ import {IconButton} from '../../Button'
 
 interface SortHeaderProps {
   order: string
-  filter: string
+  filter?: string
   onClickOrder: () => void
-  onClickFilter: () => void
+  onClickFilter?: () => void
 }
 
 const SortHeader = ({
   order = '최신순',
-  filter = '전체',
+  filter,
   onClickOrder,
   onClickFilter,
   ...props
@@ -31,17 +31,19 @@ const SortHeader = ({
           {order}
         </IconButton>
       </div>
-      <div className="filter_wrap">
-        <IconButton
-          type="Filter"
-          size="md"
-          iconWidth={13}
-          iconHeight={13}
-          color="#ABABAB"
-          onClick={onClickFilter}>
-          {filter}
-        </IconButton>
-      </div>
+      {filter && (
+        <div className="filter_wrap">
+          <IconButton
+            type="Filter"
+            size="md"
+            iconWidth={13}
+            iconHeight={13}
+            color="#ABABAB"
+            onClick={onClickFilter}>
+            {filter}
+          </IconButton>
+        </div>
+      )}
     </div>
   )
 }
