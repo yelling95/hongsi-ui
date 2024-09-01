@@ -1,6 +1,6 @@
 {
   "name": "hongsi-ui",
-  "version": "1.0.38",
+  "version": "1.0.48",
   "main": "dist/index.bundle.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -22,7 +22,7 @@
     "@babel/preset-env": "^7.22.20",
     "@babel/preset-react": "^7.22.15",
     "@babel/preset-typescript": "^7.23.0",
-    "@rollup/plugin-babel": "^6.0.2",
+    "@rollup/plugin-babel": "^6.e4fr0.2",
     "@rollup/plugin-commonjs": "^23.0.3",
     "@rollup/plugin-image": "^3.0.3",
     "@rollup/plugin-json": "^5.0.2",

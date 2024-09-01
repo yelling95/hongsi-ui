@@ -28,6 +28,29 @@ const InputWithHooks = (args: any) => {
   )
 }
 
+const OptionWithHooks = (args: any) => {
+  const [value, setValue] = React.useState(args.value || '')
+  const [options, setOptions] = React.useState(args.options || [])
+
+  return (
+    <div>
+      <TextField
+        {...args}
+        value={value}
+        options={options}
+        onChange={({value}) => {
+          setValue(value || '')
+        }}
+        onSelectOption={(opt) => {
+          setValue(opt.label)
+        }}
+        style={{width: '300px'}}
+      />
+      <div style={{width: 300, height: 50, background: 'red'}}>Test Area</div>
+    </div>
+  )
+}
+
 export const Default: Story = {
   render: (args) => InputWithHooks(args),
   args: {
@@ -125,5 +148,26 @@ export const RegExp: Story = {
   args: {
     label: '영어, 숫자만 입력',
     regExp: /^[a-zA-Z0-9]*$/,
+  },
+}
+
+export const Option: Story = {
+  render: (args) => OptionWithHooks(args),
+  args: {
+    type: 'default',
+    options: [
+      {
+        id: '1',
+        label: '1@naver.com',
+      },
+      {
+        id: '2',
+        label: '2@naver.com',
+      },
+      {
+        id: '3',
+        label: '3@naver.com',
+      },
+    ],
   },
 }

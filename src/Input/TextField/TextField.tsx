@@ -1,15 +1,20 @@
 import classnames from 'classnames'
 import React, {CSSProperties} from 'react'
-import {last} from 'lodash-es'
+import {last, map, filter} from 'lodash-es'
 import {Icon} from '../../Icon'
 import {convertThousandSeparator, makePhoneNumber} from '../const'
 import './TextField.scss'
+
+interface Option {
+  id: string
+  label: string
+}
 
 type TextFieldProps = {
   id?: string
   size?: 'lg' | 'md' | 'sm'
   style?: CSSProperties
-  type?: 'default' | 'search' | 'number' | 'numberOnly' | 'decimal' | 'phone' | 'post'
+  type?: 'default' | 'search' | 'number' | 'numberOnly' | 'decimal' | 'phone' | 'post' | 'password'
   className?: string
   disabled?: boolean | undefined
   placeholder?: string | undefined
@@ -25,7 +30,9 @@ type TextFieldProps = {
   handleFocus?: boolean
   isShowClear?: boolean
   regExp?: RegExp
+  options?: Array<Option>
   onChange: (e: {id: string | null; value: string | undefined}) => void
+  onSelectOption?: (option: Option) => void
 }
 
 export default function TextField({
@@ -48,7 +55,9 @@ export default function TextField({
   handleFocus,
   isShowClear,
   regExp,
+  options,
   onChange,
+  onSelectOption = (opt) => {},
   ...props
 }: TextFieldProps) {
   const inputFocus = React.useRef<HTMLInputElement>(null)
@@ -109,6 +118,32 @@ export default function TextField({
     }
   }, [handleFocus, inputFocus])
 
+  React.useEffect(() => {
+    if (type === 'password') {
+      setInputType('password')
+    }
+  }, [type])
+
+  const OptionContents = React.useMemo(() => {
+    if (isFocus && value && value.length > 0 && options && options.length > 0) {
+      let resultOptions = options
+      const searchOptions = filter(options, (opt) => opt.label.includes(value.trim()))
+      if (searchOptions && searchOptions.length > 0) {
+        resultOptions = searchOptions
+      }
+      return (
+        <div className="option_wrap" style={{top: label ? 58 : 34}}>
+          {map(resultOptions, (opt, optIdx) => (
+            <div key={`textfied-option-${optIdx}`} onClick={() => onSelectOption(opt)}>
+              {opt.label}
+            </div>
+          ))}
+        </div>
+      )
+    }
+    return ''
+  }, [options, value, isFocus])
+
   return (
     <div className={classnames('input_container', className, size)} style={csStyle}>
       {label && (
@@ -135,7 +170,15 @@ export default function TextField({
           placeholder={placeholder}
           value={convertValue(value) || ''}
           onFocus={() => setIsFocus(true)}
-          onBlur={() => setIsFocus(false)}
+          onBlur={() => {
+            if (options && options.length > 0) {
+              setTimeout(() => {
+                setIsFocus(false)
+              }, 200)
+            } else {
+              setIsFocus(false)
+            }
+          }}
           type={inputType || 'text'}
           {...props}
         />
@@ -167,6 +210,7 @@ export default function TextField({
       {isState === 'error' && errorMessage && (
         <span className="input_label_error">{errorMessage}</span>
       )}
+      {OptionContents}
     </div>
   )
 }

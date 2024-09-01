@@ -22,3 +22,4 @@ export declare const Disabled: Story;
 export declare const Error: Story;
 export declare const ValueIsRequired: Story;
 export declare const RegExp: Story;
+export declare const Option: Story;
