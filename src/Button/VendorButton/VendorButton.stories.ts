@@ -33,3 +33,10 @@ export const Apple: Story = {
     type: 'apple',
   },
 }
+
+export const NotSignIn: Story = {
+  args: {
+    type: 'kakao',
+    children: '네이버 계정 연동하기',
+  },
+}

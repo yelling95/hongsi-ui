@@ -12,6 +12,7 @@ interface VendorButtonProps {
   size?: 'sm' | 'lg'
   disabled?: boolean
   style?: CSSProperties
+  children?: unknown
   onClick?: () => void
 }
 
@@ -21,6 +22,7 @@ const VendorButton = ({
   size = 'lg',
   disabled = false,
   style = {},
+  children,
   onClick = () => {},
   ...props
 }: VendorButtonProps & React.HTMLAttributes<HTMLButtonElement>) => {
@@ -50,8 +52,14 @@ const VendorButton = ({
       disabled={disabled}
       type="button"
       {...props}>
-      <img src={VendorMap[type].logo} alt={VendorMap[type].desc} />
-      {size === 'lg' && <label>{VendorMap[type].label}</label>}
+      {children ? (
+        children
+      ) : (
+        <>
+          <img src={VendorMap[type].logo} alt={VendorMap[type].desc} />
+          {size === 'lg' && <label>{VendorMap[type].label}</label>}
+        </>
+      )}
     </button>
   )
 }
