@@ -1024,9 +1024,10 @@ var VendorButton = function (_a) {
     disabled = _d === void 0 ? false : _d,
     _e = _a.style,
     style = _e === void 0 ? {} : _e,
+    children = _a.children,
     _f = _a.onClick,
     onClick = _f === void 0 ? function () {} : _f,
-    props = __rest(_a, ["id", "type", "size", "disabled", "style", "onClick"]);
+    props = __rest(_a, ["id", "type", "size", "disabled", "style", "children", "onClick"]);
   var VendorMap = {
     kakao: {
       label: '카카오로 시작하기',
@@ -1051,10 +1052,10 @@ var VendorButton = function (_a) {
     style: style,
     disabled: disabled,
     type: "button"
-  }, props), /*#__PURE__*/React.createElement("img", {
+  }, props), children ? children : ( /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("img", {
     src: VendorMap[type].logo,
     alt: VendorMap[type].desc
-  }), size === 'lg' && /*#__PURE__*/React.createElement("label", null, VendorMap[type].label));
+  }), size === 'lg' && /*#__PURE__*/React.createElement("label", null, VendorMap[type].label))));
 };
 
 var css_248z$m = ".tag_container{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;align-items:center;background:var(--background);border:0;border-radius:25px;color:var(--color);cursor:pointer;display:inline-flex;font-family:SF Pro Display,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Emoji,sans-serif;font-style:normal;font-weight:600;justify-content:center;outline:none}.tag_container.sm{font-size:10px;line-height:12px;padding:2.5px 10px}.tag_container.md{font-size:12px;line-height:14px;padding:3px 10px}.tag_container.lg{font-size:18px;line-height:25px;padding:3px 18px}.tag_container.selected{--background:var(--primary-button);--color:var(--white)}.tag_container:not(.selected){--background:var(--grey-30);--color:var(--grey-60)}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIlRhZy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLGVBR0Usa0NBQW1DLENBQ25DLGlDQUFrQyxDQUdsQyxrQkFBbUIsQ0FFbkIsNEJBQTZCLENBSzdCLFFBQVcsQ0FEWCxrQkFBbUIsQ0FIbkIsa0JBQW1CLENBRW5CLGNBQWUsQ0FQZixtQkFBb0IsQ0FKcEIsME5BQTZQLENBQzdQLGlCQUFrQixDQVNsQixlQUFnQixDQUxoQixzQkFBdUIsQ0FFdkIsWUFPRixDQUNBLGtCQUNFLGNBQWUsQ0FDZixnQkFBaUIsQ0FDakIsa0JBQ0YsQ0FDQSxrQkFDRSxjQUFlLENBQ2YsZ0JBQWlCLENBQ2pCLGdCQUNGLENBQ0Esa0JBQ0UsY0FBZSxDQUNmLGdCQUFpQixDQUNqQixnQkFDRixDQUNBLHdCQUNFLGtDQUFtQyxDQUNuQyxvQkFDRixDQUNBLDhCQUNFLDJCQUE0QixDQUM1QixzQkFDRiIsImZpbGUiOiJUYWcuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi50YWdfY29udGFpbmVyIHtcbiAgZm9udC1mYW1pbHk6IFwiU0YgUHJvIERpc3BsYXlcIiwgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCBzeXN0ZW0tdWksIFJvYm90bywgXCJIZWx2ZXRpY2EgTmV1ZVwiLCBcIlNlZ29lIFVJXCIsIFwiQXBwbGUgU0QgR290aGljIE5lb1wiLCBcIk5vdG8gU2FucyBLUlwiLCBcIk1hbGd1biBHb3RoaWNcIiwgXCJBcHBsZSBDb2xvciBFbW9qaVwiLCBcIlNlZ29lIFVJIEVtb2ppXCIsIFwiU2Vnb2UgVUkgU3ltYm9sXCIsIFwiTm90byBFbW9qaVwiLCBzYW5zLXNlcmlmO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG4gIC13ZWJraXQtZm9udC1zbW9vdGhpbmc6IGFudGlhbGlhc2VkO1xuICAtbW96LW9zeC1mb250LXNtb290aGluZzogZ3JheXNjYWxlO1xuICBkaXNwbGF5OiBpbmxpbmUtZmxleDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIG91dGxpbmU6IG5vbmU7XG4gIGJhY2tncm91bmQ6IHZhcigtLWJhY2tncm91bmQpO1xuICBjb2xvcjogdmFyKC0tY29sb3IpO1xuICBmb250LXdlaWdodDogNjAwO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIGJvcmRlci1yYWRpdXM6IDI1cHg7XG4gIGJvcmRlcjogMHB4O1xufVxuLnRhZ19jb250YWluZXIuc20ge1xuICBmb250LXNpemU6IDEwcHg7XG4gIGxpbmUtaGVpZ2h0OiAxMnB4O1xuICBwYWRkaW5nOiAyLjVweCAxMHB4O1xufVxuLnRhZ19jb250YWluZXIubWQge1xuICBmb250LXNpemU6IDEycHg7XG4gIGxpbmUtaGVpZ2h0OiAxNHB4O1xuICBwYWRkaW5nOiAzcHggMTBweDtcbn1cbi50YWdfY29udGFpbmVyLmxnIHtcbiAgZm9udC1zaXplOiAxOHB4O1xuICBsaW5lLWhlaWdodDogMjVweDtcbiAgcGFkZGluZzogM3B4IDE4cHg7XG59XG4udGFnX2NvbnRhaW5lci5zZWxlY3RlZCB7XG4gIC0tYmFja2dyb3VuZDogdmFyKC0tcHJpbWFyeS1idXR0b24pO1xuICAtLWNvbG9yOiB2YXIoLS13aGl0ZSk7XG59XG4udGFnX2NvbnRhaW5lcjpub3QoLnNlbGVjdGVkKSB7XG4gIC0tYmFja2dyb3VuZDogdmFyKC0tZ3JleS0zMCk7XG4gIC0tY29sb3I6IHZhcigtLWdyZXktNjApO1xufSJdfQ== */";

@@ -1,6 +1,6 @@
 import React, {CSSProperties} from 'react'
 import classnames from 'classnames'
-import moment from 'moment'
+import dayjs from 'dayjs'
 import {Icon} from '../../Icon'
 
 import './Chatting.scss'
@@ -45,7 +45,7 @@ const Chatting = ({
             <label>{memberCnt}</label>
           </div>
           <div className="timestamp">
-            {timestamp ? moment(timestamp, 'YYYY-MM-DD HH:mm:ss').format('HH:mm') : ''}
+            {timestamp ? dayjs(timestamp, 'YYYY-MM-DD HH:mm:ss').format('HH:mm') : ''}
           </div>
         </div>
         <div className="message limit-line-2">{lastMessage}</div>

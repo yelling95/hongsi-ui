@@ -1,6 +1,6 @@
 {
   "name": "hongsi-ui",
-  "version": "1.0.52",
+  "version": "1.0.53",
   "main": "dist/index.bundle.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -73,8 +73,8 @@
   "dependencies": {
     "@storybook/addon-docs": "^7.5.0",
     "@storybook/addon-mdx-gfm": "^7.5.0",
+    "dayjs": "^1.11.13",
     "html-react-parser": "^5.1.0",
-    "moment": "^2.29.4",
     "prop-types": "^15.8.1",
     "react-content-loader": "^6.2.1",
     "style-inject": "^0.3.0",
