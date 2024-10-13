@@ -1,10 +1,9 @@
 {
   "name": "hongsi-ui",
-  "version": "1.0.53",
+  "version": "1.0.54",
   "main": "dist/index.bundle.js",
   "types": "dist/index.d.ts",
   "files": [
-    "src/**",
     "dist/**"
   ],
   "license": "MIT",
@@ -28,6 +27,7 @@
     "@rollup/plugin-json": "^5.0.2",
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^9.0.2",
+    "@rollup/plugin-url": "^8.0.2",
     "@storybook/addon-essentials": "^7.4.6",
     "@storybook/addon-interactions": "^7.4.6",
     "@storybook/addon-links": "^7.4.6",

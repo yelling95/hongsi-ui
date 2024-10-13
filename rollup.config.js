@@ -1,10 +1,11 @@
 /* eslint-disable indent */
-import babel from '@rollup/plugin-babel'
+import {babel} from '@rollup/plugin-babel'
 import typescript from '@rollup/plugin-typescript'
 import commonjs from '@rollup/plugin-commonjs'
 import postcss from 'rollup-plugin-postcss'
 import peerDepsExternal from 'rollup-plugin-peer-deps-external'
 import image from '@rollup/plugin-image'
+import url from '@rollup/plugin-url'
 import {nodeResolve} from '@rollup/plugin-node-resolve'
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx']
@@ -27,7 +28,7 @@ export default {
   plugins: [
     nodeResolve({extensions}),
     babel({
-      exclude: 'node_modules/**',
+      exclude: ['node_modules/**', '**/*.stories.tsx'],
       extensions,
       include: ['src/**/*'],
     }),
@@ -44,8 +45,6 @@ export default {
         `import styleInject from 'style-inject';styleInject(${cssVariableName});`,
     }),
     image(),
-    // json(),
-    // url(), // 미디어 파일을 dataURI 형태로 불러와서 사용 할 수 있게 해줌.
-    // svgr(), // SVG를 컴포넌트로 사용 할 수 있게 해줌.
+    url(),
   ],
 }
