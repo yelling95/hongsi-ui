@@ -6,3 +6,4 @@ type Story = StoryObj<typeof meta>;
 export declare const Kakao: Story;
 export declare const Naver: Story;
 export declare const Apple: Story;
+export declare const NotSignIn: Story;
