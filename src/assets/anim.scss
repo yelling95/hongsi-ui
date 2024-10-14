@@ -27,3 +27,15 @@
     transform: translateY(0);
   }
 }
+
+@keyframes snackbar_exp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}

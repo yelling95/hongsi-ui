@@ -20,6 +20,10 @@
     display: flex;
   }
 
+  &.expire {
+    animation: snackbar_exp 1s ease 0s 1 normal forwards;
+  }
+
   .message_wrap {
     display: flex;
     align-items: center;
